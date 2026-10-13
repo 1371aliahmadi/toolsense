@@ -33,5 +33,14 @@ wandb/
 
 # Qdrant local storage
 qdrant_storage/
+data/qdrant/
+
+# Generated reports (Evidently, Optuna, ydata-profiling)
+data/*.html
+data/*.json
+
+# Large data files (use DVC)
+data/*.csv
+data/*.sqlite
 
 .github/
