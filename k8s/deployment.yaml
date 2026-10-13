@@ -1,0 +1,77 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: toolsense-api
+  namespace: default
+  labels:
+    app: toolsense
+    component: api
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: toolsense
+      component: api
+  strategy:
+    type: RollingUpdate
+    rollingUpdate:
+      maxUnavailable: 1
+      maxSurge: 1
+  template:
+    metadata:
+      labels:
+        app: toolsense
+        component: api
+    spec:
+      containers:
+        - name: api
+          image: toolsense-api:latest
+          imagePullPolicy: IfNotPresent   # use local image with minikube
+          ports:
+            - containerPort: 8000
+          env:
+            - name: QDRANT_PATH
+              value: /app/data/qdrant
+            - name: WANDB_MODE
+              value: disabled
+          volumeMounts:
+            - name: toolsense-data
+              mountPath: /app/data
+              readOnly: true
+          resources:
+            requests:
+              cpu: "500m"
+              memory: "512Mi"
+            limits:
+              cpu: "2000m"
+              memory: "2Gi"
+          livenessProbe:
+            httpGet:
+              path: /health
+              port: 8000
+            initialDelaySeconds: 30
+            periodSeconds: 15
+            timeoutSeconds: 5
+          readinessProbe:
+            httpGet:
+              path: /health
+              port: 8000
+            initialDelaySeconds: 10
+            periodSeconds: 10
+            timeoutSeconds: 3
+      volumes:
+        - name: toolsense-data
+          persistentVolumeClaim:
+            claimName: toolsense-data-pvc
+---
+apiVersion: v1
+kind: PersistentVolumeClaim
+metadata:
+  name: toolsense-data-pvc
+  namespace: default
+spec:
+  accessModes:
+    - ReadWriteOnce
+  resources:
+    requests:
+      storage: 2Gi

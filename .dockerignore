@@ -1,0 +1,26 @@
+# Don't copy these into the Docker image
+
+# Large data (mounted as volume at runtime)
+data/
+
+# W&B logs
+wandb/
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+.pytest_cache/
+*.egg-info/
+
+# Dev files
+.env
+.git/
+.github/
+.dvc/
+*.dvc
+notebooks/
+tests/
+
+# Training/tuning scripts (not needed in API image)
+run_phase0*.py

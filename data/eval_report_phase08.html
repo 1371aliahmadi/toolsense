@@ -1,0 +1,1723 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>ToolSense Evaluation Report</title>
+<style>
+  body { font-family: Arial, sans-serif; max-width: 1100px; margin: 40px auto; color: #333; }
+  h1 { color: #2c3e50; }
+  h2 { color: #34495e; border-bottom: 2px solid #ecf0f1; padding-bottom: 6px; }
+  .metrics-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; margin: 20px 0; }
+  .metric-card { background: #f8f9fa; border-radius: 8px; padding: 16px; text-align: center; border-left: 4px solid #3498db; }
+  .metric-card .value { font-size: 2em; font-weight: bold; color: #2980b9; }
+  .metric-card .label { color: #7f8c8d; font-size: 0.9em; }
+  .weights { background: #eafaf1; border-radius: 8px; padding: 16px; margin: 16px 0; border-left: 4px solid #27ae60; }
+  table { width: 100%; border-collapse: collapse; font-size: 0.85em; }
+  th { background: #2c3e50; color: white; padding: 10px 8px; text-align: left; }
+  tr:nth-child(even) { background: #f2f2f2; }
+  td { padding: 8px; border-bottom: 1px solid #ddd; vertical-align: top; }
+  .good { color: #27ae60; font-weight: bold; }
+  .bad  { color: #e74c3c; }
+</style>
+</head>
+<body>
+<h1>ToolSense — Performance Evaluation Report</h1>
+<p>Phase 06 | Queries: 209 | Catalogue: 2121 tools</p>
+
+<div class="weights">
+  <strong>Tuned weights (from Optuna Phase 05):</strong>
+  w_semantic = 0.4085 &nbsp;|&nbsp;
+  w_category = 0.1371 &nbsp;|&nbsp;
+  w_popularity = 0.0
+</div>
+
+<h2>Aggregate Metrics</h2>
+<div class="metrics-grid">
+  <div class="metric-card"><div class="value">0.543</div><div class="label">Precision@5</div></div>
+  <div class="metric-card"><div class="value">0.304</div><div class="label">Precision@10</div></div>
+  <div class="metric-card"><div class="value">0.904</div><div class="label">NDCG@5</div></div>
+  <div class="metric-card"><div class="value">0.899</div><div class="label">NDCG@10</div></div>
+  <div class="metric-card"><div class="value">0.529</div><div class="label">Diversity@5</div></div>
+  <div class="metric-card"><div class="value">44.0%</div><div class="label">Catalogue Coverage@10</div></div>
+</div>
+
+<h2>Per-Query Results</h2>
+<table>
+  <tr>
+    <th>Query</th><th>P@5</th><th>P@10</th><th>NDCG@5</th><th>ILD@5</th><th>Top 5 Tools</th>
+  </tr>
+  <tr>
+    <td>generate AI-powered videos for YouTube</td>
+    <td class="good">0.60</td>
+    <td>0.30</td>
+    <td>1.00</td>
+    <td>0.57</td>
+    <td style="font-size:0.8em">Growati, Vidrunner, ScouTube, motionvid.ai, Helios 14B RealTime AOTI</td>
+  </tr>
+  <tr>
+    <td>text to video generation tool</td>
+    <td class="good">1.00</td>
+    <td>0.90</td>
+    <td>1.00</td>
+    <td>0.25</td>
+    <td style="font-size:0.8em">Sisif, Synthesia, Hour One, ShortVideoGen, Video Generation Leaderboard</td>
+  </tr>
+  <tr>
+    <td>AI video editor for short clips</td>
+    <td class="good">0.60</td>
+    <td>0.30</td>
+    <td>1.00</td>
+    <td>0.36</td>
+    <td style="font-size:0.8em">Clipwing, ShortVideoGen, motionvid.ai, VibeClip, Instant Video</td>
+  </tr>
+  <tr>
+    <td>create talking avatar from text</td>
+    <td class="good">0.80</td>
+    <td>0.40</td>
+    <td>1.00</td>
+    <td>0.31</td>
+    <td style="font-size:0.8em">LongCat-Video-Avatar 1.5, TTS x Hallo Talking Portrait, D-ID, MoDA Fast Talking Head, Hallo</td>
+  </tr>
+  <tr>
+    <td>convert blog post to video automatically</td>
+    <td class="bad">0.40</td>
+    <td>0.20</td>
+    <td>1.00</td>
+    <td>0.46</td>
+    <td style="font-size:0.8em">Hour One, One URL → Full Content Suite, Synthesia, Sisif, Clipwing</td>
+  </tr>
+  <tr>
+    <td>transcribe audio and video to text</td>
+    <td class="good">1.00</td>
+    <td>0.60</td>
+    <td>1.00</td>
+    <td>0.44</td>
+    <td style="font-size:0.8em">Transcribe Video to Text, EKHOS AI, CreateEasily, Edit Video By Editing Text, Cosmos</td>
+  </tr>
+  <tr>
+    <td>generate podcast from text</td>
+    <td class="good">1.00</td>
+    <td>0.70</td>
+    <td>1.00</td>
+    <td>0.31</td>
+    <td style="font-size:0.8em">podcast.ai, Zenmic.com, Voice Clone AI Podcast, Podcastify, AInterview.space</td>
+  </tr>
+  <tr>
+    <td>voice cloning for content creation</td>
+    <td class="good">0.60</td>
+    <td>0.70</td>
+    <td>0.95</td>
+    <td>0.35</td>
+    <td style="font-size:0.8em">TTS WebUI, Zenmic.com, Microsoft Azure Neural TTS, Murf AI, ElevenLabs</td>
+  </tr>
+  <tr>
+    <td>AI dubbing tool for translation</td>
+    <td class="bad">0.40</td>
+    <td>0.20</td>
+    <td>1.00</td>
+    <td>0.42</td>
+    <td style="font-size:0.8em">Video Dubbing (SoniTranslate), Vaani, Canary 1b V2, MeloTTS, OmniVoice</td>
+  </tr>
+  <tr>
+    <td>automatic captions and subtitles</td>
+    <td class="good">0.80</td>
+    <td>0.40</td>
+    <td>1.00</td>
+    <td>0.59</td>
+    <td style="font-size:0.8em">AutoSubtitles 2.0, Overline, Marlin 2B Video Understanding, DualCap, AutoEdit</td>
+  </tr>
+  <tr>
+    <td>write better marketing copy and emails</td>
+    <td class="good">1.00</td>
+    <td>0.60</td>
+    <td>1.00</td>
+    <td>0.67</td>
+    <td style="font-size:0.8em">copy.ai, mailX by mailwarm, Mailento, KryxAI, Brew</td>
+  </tr>
+  <tr>
+    <td>AI writing assistant for blog posts</td>
+    <td class="good">1.00</td>
+    <td>0.50</td>
+    <td>1.00</td>
+    <td>0.33</td>
+    <td style="font-size:0.8em">Quick Creator, Postwise, Yomu, Anyword, Lavender</td>
+  </tr>
+  <tr>
+    <td>long-form content generator for articles</td>
+    <td class="bad">0.20</td>
+    <td>0.10</td>
+    <td>1.00</td>
+    <td>0.43</td>
+    <td style="font-size:0.8em">Myriad, genei, Contenda, Hypotenuse AI, Copysmith</td>
+  </tr>
+  <tr>
+    <td>grammar and style checker for documents</td>
+    <td class="bad">0.00</td>
+    <td>0.00</td>
+    <td>0.00</td>
+    <td>0.79</td>
+    <td style="font-size:0.8em">Parsewise API, Carbone Skill for AI, Paligemma Doc, StealthZero, Indic Parler-TTS</td>
+  </tr>
+  <tr>
+    <td>paraphrase and rewrite sentences</td>
+    <td class="bad">0.40</td>
+    <td>0.20</td>
+    <td>1.00</td>
+    <td>0.69</td>
+    <td style="font-size:0.8em">Andika AI, DualCap, Document Summarization, copy.ai, EX-Ray: Relationship Analyzer</td>
+  </tr>
+  <tr>
+    <td>AI tool for academic writing and citations</td>
+    <td class="good">0.80</td>
+    <td>0.50</td>
+    <td>0.98</td>
+    <td>0.41</td>
+    <td style="font-size:0.8em">Agent X - Papers, Sourcely, Yomu, Moonbeam, Anyword</td>
+  </tr>
+  <tr>
+    <td>generate product descriptions for e-commerce</td>
+    <td class="good">0.80</td>
+    <td>0.40</td>
+    <td>1.00</td>
+    <td>0.65</td>
+    <td style="font-size:0.8em">Monoshoot, Image Describer, AI E-Commerce Fashion, HostCopy, MusicLM</td>
+  </tr>
+  <tr>
+    <td>creative writing and storytelling AI</td>
+    <td class="bad">0.20</td>
+    <td>0.30</td>
+    <td>1.00</td>
+    <td>0.36</td>
+    <td style="font-size:0.8em">LAIKA, Contenda, Shy Editor, Copysmith, Jasper</td>
+  </tr>
+  <tr>
+    <td>AI ghostwriter for social media bios</td>
+    <td class="bad">0.20</td>
+    <td>0.10</td>
+    <td>1.00</td>
+    <td>0.45</td>
+    <td style="font-size:0.8em">Ghostwriter, Hypotenuse AI, AI Prompt Library, Moonbeam, Copysmith</td>
+  </tr>
+  <tr>
+    <td>generate press releases automatically</td>
+    <td class="bad">0.20</td>
+    <td>0.10</td>
+    <td>1.00</td>
+    <td>0.63</td>
+    <td style="font-size:0.8em">EmailTriager, CrowdCheck — Simulate the Crowd, One URL → Full Content Suite, Mailento, PulsePost</td>
+  </tr>
+  <tr>
+    <td>generate images from text prompts</td>
+    <td class="good">0.80</td>
+    <td>0.50</td>
+    <td>1.00</td>
+    <td>0.39</td>
+    <td style="font-size:0.8em">UNO FLUX, Miragic AI Image Generator, Kimodo, PrompTessor, DeepseekJanusPro</td>
+  </tr>
+  <tr>
+    <td>AI tool for graphic design and logos</td>
+    <td class="good">1.00</td>
+    <td>0.50</td>
+    <td>1.00</td>
+    <td>0.42</td>
+    <td style="font-size:0.8em">Gamma, Text2Infographic, SVGStud.io, Microsoft Designer, Ponzu</td>
+  </tr>
+  <tr>
+    <td>background remover for photos</td>
+    <td class="good">1.00</td>
+    <td>0.60</td>
+    <td>1.00</td>
+    <td>0.37</td>
+    <td style="font-size:0.8em">Miragic AI Background, PictTools, Remove Video Background, Restore Photos, BRIA RMBG 2.0</td>
+  </tr>
+  <tr>
+    <td>AI interior design and room decoration</td>
+    <td class="good">0.80</td>
+    <td>0.40</td>
+    <td>1.00</td>
+    <td>0.50</td>
+    <td style="font-size:0.8em">Room Reinvented, Dream of Ikea, Room Cleaner, Microsoft Designer, ImageN'You</td>
+  </tr>
+  <tr>
+    <td>create infographics from data automatically</td>
+    <td class="bad">0.40</td>
+    <td>0.20</td>
+    <td>0.92</td>
+    <td>0.60</td>
+    <td style="font-size:0.8em">Slack Data Agent, Chartbuilder, Pdf To Structured Data, Fake Data Generator (JSONL), Excelmatic</td>
+  </tr>
+  <tr>
+    <td>upscale and enhance low-resolution images</td>
+    <td class="good">1.00</td>
+    <td>0.80</td>
+    <td>1.00</td>
+    <td>0.42</td>
+    <td style="font-size:0.8em">Enhance This DemoFusion SDXL, AI Upscaler, High Resolution FireRed Image Edit 2K, PASD Magnify, InvSR</td>
+  </tr>
+  <tr>
+    <td>AI fashion and clothing design tool</td>
+    <td class="good">1.00</td>
+    <td>0.70</td>
+    <td>1.00</td>
+    <td>0.30</td>
+    <td style="font-size:0.8em">Fashion Try-On, AI E-Commerce Fashion, WeShopAI Fashion Model Pose Change, AI Clothes Changer, Style Generator</td>
+  </tr>
+  <tr>
+    <td>generate illustrations for children books</td>
+    <td class="bad">0.20</td>
+    <td>0.10</td>
+    <td>1.00</td>
+    <td>0.66</td>
+    <td style="font-size:0.8em">Our Stories, GenShare, OpenArt, 1040 AI Art Models Printing Press, ImageN'You</td>
+  </tr>
+  <tr>
+    <td>3D model generation from text</td>
+    <td class="good">1.00</td>
+    <td>0.60</td>
+    <td>1.00</td>
+    <td>0.28</td>
+    <td style="font-size:0.8em">FLUX TRELLIS, TRELLIS.2-Text-to-3D (Rerun), Sparc3D, AI 3D Model Generator, SORA 3D</td>
+  </tr>
+  <tr>
+    <td>color palette generator for designers</td>
+    <td class="bad">0.20</td>
+    <td>0.10</td>
+    <td>1.00</td>
+    <td>0.55</td>
+    <td style="font-size:0.8em">Style Generator, iColoring, ColorFlow, Reseed, AgentBrush</td>
+  </tr>
+  <tr>
+    <td>automate coding and fix bugs</td>
+    <td class="bad">0.40</td>
+    <td>0.20</td>
+    <td>1.00</td>
+    <td>0.62</td>
+    <td style="font-size:0.8em">Callstack.ai PR Reviewer, Kyro, BugLens, GoCodeo, ShallowCodeResearch</td>
+  </tr>
+  <tr>
+    <td>code review and debugging assistant</td>
+    <td class="bad">0.20</td>
+    <td>0.10</td>
+    <td>1.00</td>
+    <td>0.53</td>
+    <td style="font-size:0.8em">CodeRabbit, CodeMouse, Gito, Debuild, Phind</td>
+  </tr>
+  <tr>
+    <td>generate unit tests automatically</td>
+    <td class="good">0.60</td>
+    <td>0.30</td>
+    <td>1.00</td>
+    <td>0.67</td>
+    <td style="font-size:0.8em">TestSprite 3.0, ShallowCodeResearch, CodiumAI, Zorv, AutoQuizzer</td>
+  </tr>
+  <tr>
+    <td>AI pair programmer for Python</td>
+    <td class="good">0.60</td>
+    <td>0.30</td>
+    <td>1.00</td>
+    <td>0.56</td>
+    <td style="font-size:0.8em">Ghostwriter, Portia AI, How To Learn Artificial Intelligence (AI)?, ACE-Chat, agmsg</td>
+  </tr>
+  <tr>
+    <td>convert natural language to SQL queries</td>
+    <td class="bad">0.40</td>
+    <td>0.20</td>
+    <td>1.00</td>
+    <td>0.55</td>
+    <td style="font-size:0.8em">AI2sql, OpenAI API, DataPup, LMQL, OpenBI</td>
+  </tr>
+  <tr>
+    <td>auto-document code and write comments</td>
+    <td class="bad">0.20</td>
+    <td>0.10</td>
+    <td>0.63</td>
+    <td>0.55</td>
+    <td style="font-size:0.8em">Document.Bot - EU/ Offline AI workspace, aiPDF, Manifest, OpenAI Codex, Ghostwriter</td>
+  </tr>
+  <tr>
+    <td>API integration and backend automation</td>
+    <td class="good">1.00</td>
+    <td>0.50</td>
+    <td>1.00</td>
+    <td>0.61</td>
+    <td style="font-size:0.8em">Integuru, Buffer API, AgentDock, Forward, Powabase</td>
+  </tr>
+  <tr>
+    <td>DevOps and infrastructure automation tool</td>
+    <td class="good">0.60</td>
+    <td>0.30</td>
+    <td>1.00</td>
+    <td>0.65</td>
+    <td style="font-size:0.8em">Ohuriya AI - Ai DevOps in minutes, AgentDock, STATICX, CtrlOps, FlintLab Sirius Platform</td>
+  </tr>
+  <tr>
+    <td>security vulnerability scanner for code</td>
+    <td class="good">1.00</td>
+    <td>0.80</td>
+    <td>1.00</td>
+    <td>0.62</td>
+    <td style="font-size:0.8em">Scan Ninja AI, GhostCheck, Agnixa Recon 2.0, Kyro, VibeSafe</td>
+  </tr>
+  <tr>
+    <td>AI for database query optimization</td>
+    <td class="bad">0.40</td>
+    <td>0.20</td>
+    <td>1.00</td>
+    <td>0.62</td>
+    <td style="font-size:0.8em">DataPup, Loktra, Jesse, Open Perflexity V2, Quantized Retrieval</td>
+  </tr>
+  <tr>
+    <td>SEO optimization for my website</td>
+    <td class="good">1.00</td>
+    <td>0.60</td>
+    <td>1.00</td>
+    <td>0.54</td>
+    <td style="font-size:0.8em">SEO Scrubbox, GeoReady, Gemma Diffusion Website Builder, BrandGEO, IvaBot</td>
+  </tr>
+  <tr>
+    <td>create social media posts automatically</td>
+    <td class="good">0.60</td>
+    <td>0.30</td>
+    <td>1.00</td>
+    <td>0.62</td>
+    <td style="font-size:0.8em">GoGoHype, RobinOS, Vavdio, Buffer API, Viral</td>
+  </tr>
+  <tr>
+    <td>sales outreach and cold email automation</td>
+    <td class="good">1.00</td>
+    <td>0.50</td>
+    <td>1.00</td>
+    <td>0.63</td>
+    <td style="font-size:0.8em">Mailento, ReplylessAI Sequences, SignalLEMO - Ai Outreach Made Simple, DataCloser, Sulsaly</td>
+  </tr>
+  <tr>
+    <td>monitor social media mentions</td>
+    <td class="bad">0.40</td>
+    <td>0.20</td>
+    <td>1.00</td>
+    <td>0.61</td>
+    <td style="font-size:0.8em">GoGoHype, RobinOS, Buffer API, /monitor by Firecrawl, PressPulse AI</td>
+  </tr>
+  <tr>
+    <td>AI for keyword research and content planning</td>
+    <td class="bad">0.00</td>
+    <td>0.00</td>
+    <td>0.00</td>
+    <td>0.31</td>
+    <td style="font-size:0.8em">Agent X - Papers, Contenda, Luthor, copy.ai, Copysmith</td>
+  </tr>
+  <tr>
+    <td>competitor analysis and market research</td>
+    <td class="bad">0.40</td>
+    <td>0.20</td>
+    <td>1.00</td>
+    <td>0.63</td>
+    <td style="font-size:0.8em">ResearchOS, Parano.ai, Miragic Sales Pilot, NixRank, GummySearch</td>
+  </tr>
+  <tr>
+    <td>ad copy generation for Google Ads</td>
+    <td class="good">1.00</td>
+    <td>0.50</td>
+    <td>1.00</td>
+    <td>0.56</td>
+    <td style="font-size:0.8em">AI Ad Workflows, Peekads, EcomForge AI, Clickable, copy.ai</td>
+  </tr>
+  <tr>
+    <td>A/B testing content for landing pages</td>
+    <td class="bad">0.40</td>
+    <td>0.20</td>
+    <td>0.92</td>
+    <td>0.77</td>
+    <td style="font-size:0.8em">KryxAI, Loopvalid, Nandzz, IvaBot, Drizz</td>
+  </tr>
+  <tr>
+    <td>influencer marketing campaign tool</td>
+    <td class="good">1.00</td>
+    <td>0.60</td>
+    <td>1.00</td>
+    <td>0.62</td>
+    <td style="font-size:0.8em">Kflx AI, Bond, EmailFlow.AI, GoGoHype, AI Marketing Content Generator</td>
+  </tr>
+  <tr>
+    <td>generate hashtags for Instagram posts</td>
+    <td class="good">0.80</td>
+    <td>0.40</td>
+    <td>1.00</td>
+    <td>0.67</td>
+    <td style="font-size:0.8em">IGLink - Chrome Extension, RobinOS, One URL → Full Content Suite, Postwise, Hooked_AI</td>
+  </tr>
+  <tr>
+    <td>customer support chatbot for my website</td>
+    <td class="good">0.80</td>
+    <td>0.40</td>
+    <td>1.00</td>
+    <td>0.39</td>
+    <td style="font-size:0.8em">GPTHelp.ai, Dear AI, SiteGPT, SiteSpeakAI, ConvertForge AI</td>
+  </tr>
+  <tr>
+    <td>AI helpdesk and ticket routing</td>
+    <td class="bad">0.40</td>
+    <td>0.20</td>
+    <td>1.00</td>
+    <td>0.66</td>
+    <td style="font-size:0.8em">Dispatch Layer, TravelPlanner, Enterprise Hub, CoI Agent, Doc Mcp</td>
+  </tr>
+  <tr>
+    <td>FAQ bot builder without coding</td>
+    <td class="bad">0.00</td>
+    <td>0.00</td>
+    <td>0.00</td>
+    <td>0.46</td>
+    <td style="font-size:0.8em">Unit 2.1 smolagents Code Quiz, ASMI, PrompTessor, Hexabot, Character.AI</td>
+  </tr>
+  <tr>
+    <td>live chat with AI fallback</td>
+    <td class="bad">0.20</td>
+    <td>0.10</td>
+    <td>1.00</td>
+    <td>0.41</td>
+    <td style="font-size:0.8em">Real Time Chat With AI, Hy3-preview, Sun, Mini Omni2 Webrtc, Aspen — Own your intelligence</td>
+  </tr>
+  <tr>
+    <td>sentiment analysis for customer feedback</td>
+    <td class="good">1.00</td>
+    <td>0.50</td>
+    <td>1.00</td>
+    <td>0.34</td>
+    <td style="font-size:0.8em">GummySearch, Dear AI, SiteGPT, Inline Help, GPTHelp.ai</td>
+  </tr>
+  <tr>
+    <td>voice AI for inbound customer calls</td>
+    <td class="good">1.00</td>
+    <td>0.60</td>
+    <td>1.00</td>
+    <td>0.45</td>
+    <td style="font-size:0.8em">Cald.ai, AICaller.io, Dear AI, AgentLine, Dialbotix</td>
+  </tr>
+  <tr>
+    <td>email triage and auto-response</td>
+    <td class="good">0.80</td>
+    <td>0.50</td>
+    <td>1.00</td>
+    <td>0.60</td>
+    <td style="font-size:0.8em">TidyMail, Dispatch Layer, mailX by mailwarm, ReplylessAI Sequences, Slashy</td>
+  </tr>
+  <tr>
+    <td>customer onboarding automation</td>
+    <td class="good">1.00</td>
+    <td>0.50</td>
+    <td>1.00</td>
+    <td>0.29</td>
+    <td style="font-size:0.8em">SiteSpeakAI, SiteGPT, Dear AI, Inline Help, Aidbase</td>
+  </tr>
+  <tr>
+    <td>multilingual support chatbot</td>
+    <td class="good">1.00</td>
+    <td>0.50</td>
+    <td>1.00</td>
+    <td>0.43</td>
+    <td style="font-size:0.8em">GPTHelp.ai, Dear AI, Chatterbox-Multilingual-TTS, ChatBot UI With API, Llama 3- 70B Chatbot</td>
+  </tr>
+  <tr>
+    <td>AI for complaint handling and escalation</td>
+    <td class="bad">0.00</td>
+    <td>0.00</td>
+    <td>0.00</td>
+    <td>0.48</td>
+    <td style="font-size:0.8em">CoI Agent, TEN Agent Demo, OctoTools, Agent X - Papers, Myriad</td>
+  </tr>
+  <tr>
+    <td>scheduling and calendar management</td>
+    <td class="good">0.60</td>
+    <td>0.40</td>
+    <td>1.00</td>
+    <td>0.64</td>
+    <td style="font-size:0.8em">Sketella, Socialsonic, Text2Calendar, Manus Scheduled Tasks 2.0, Superlist MCP</td>
+  </tr>
+  <tr>
+    <td>data analysis and business intelligence</td>
+    <td class="good">1.00</td>
+    <td>0.80</td>
+    <td>1.00</td>
+    <td>0.63</td>
+    <td style="font-size:0.8em">NC Data, ResearchOS, Basedash Semantic Layer, Slack Data Agent, Excelmatic</td>
+  </tr>
+  <tr>
+    <td>summarize long documents and PDFs</td>
+    <td class="good">0.80</td>
+    <td>0.40</td>
+    <td>1.00</td>
+    <td>0.51</td>
+    <td style="font-size:0.8em">Summary With AI, Smmry, PDFParsersPlayground, Mistral OCR 3, DeepSeek OCR 2 Demo</td>
+  </tr>
+  <tr>
+    <td>meeting notes and action items from recording</td>
+    <td class="good">1.00</td>
+    <td>0.60</td>
+    <td>1.00</td>
+    <td>0.49</td>
+    <td style="font-size:0.8em">Cogram, Otter.ai, Loopin AI, MeetGeek, audien.to</td>
+  </tr>
+  <tr>
+    <td>AI executive assistant for inbox management</td>
+    <td class="bad">0.00</td>
+    <td>0.00</td>
+    <td>0.00</td>
+    <td>0.69</td>
+    <td style="font-size:0.8em">Dirac, SaneBox, Taskade, Lemmy, Lavender</td>
+  </tr>
+  <tr>
+    <td>workflow automation without coding</td>
+    <td class="good">1.00</td>
+    <td>0.80</td>
+    <td>1.00</td>
+    <td>0.51</td>
+    <td style="font-size:0.8em">Workflow Automation Softwares, Maia by Make, poorcoder, Taskade, ReBillion.ai</td>
+  </tr>
+  <tr>
+    <td>project management AI assistant</td>
+    <td class="good">0.60</td>
+    <td>0.30</td>
+    <td>1.00</td>
+    <td>0.54</td>
+    <td style="font-size:0.8em">Completo AI, Truetask, fynk, Laviya, Taskade</td>
+  </tr>
+  <tr>
+    <td>AI for financial forecasting and budgeting</td>
+    <td class="good">0.60</td>
+    <td>0.30</td>
+    <td>1.00</td>
+    <td>0.65</td>
+    <td style="font-size:0.8em">GIFT Eval, Miragic Sales Pilot, FinAdvisor, Veltrix AI, Asset Quadrant</td>
+  </tr>
+  <tr>
+    <td>contract review and legal document analysis</td>
+    <td class="good">0.80</td>
+    <td>0.40</td>
+    <td>0.98</td>
+    <td>0.66</td>
+    <td style="font-size:0.8em">AskMurdock, ReGuardian, CaseGap AI, Notum, fynk</td>
+  </tr>
+  <tr>
+    <td>knowledge base and internal wiki builder</td>
+    <td class="bad">0.40</td>
+    <td>0.20</td>
+    <td>1.00</td>
+    <td>0.62</td>
+    <td style="font-size:0.8em">LLM Wiki cc, Gemma Diffusion Website Builder, SliderSpace, OpenCairn, BuildSmall KnowledgeHub</td>
+  </tr>
+  <tr>
+    <td>HR recruiting and candidate screening</td>
+    <td class="good">1.00</td>
+    <td>0.50</td>
+    <td>1.00</td>
+    <td>0.58</td>
+    <td style="font-size:0.8em">UnBullet, Adon AI, Rifair AI, Searchlight, Ghost Assistant</td>
+  </tr>
+  <tr>
+    <td>AI resume screener and ranking</td>
+    <td class="good">1.00</td>
+    <td>0.60</td>
+    <td>1.00</td>
+    <td>0.50</td>
+    <td style="font-size:0.8em">Huntr AI Resume Builder, Agent Leaderboard, Resume Interview, Roast My Resume, JobFit AI</td>
+  </tr>
+  <tr>
+    <td>generate job descriptions automatically</td>
+    <td class="bad">0.40</td>
+    <td>0.20</td>
+    <td>1.00</td>
+    <td>0.65</td>
+    <td style="font-size:0.8em">Trackply, HostCopy, Resume Interview, ezJobs, AppliCraft AI</td>
+  </tr>
+  <tr>
+    <td>employee onboarding automation</td>
+    <td class="bad">0.40</td>
+    <td>0.20</td>
+    <td>1.00</td>
+    <td>0.53</td>
+    <td style="font-size:0.8em">Honen, Adon AI, Taskade, Maia by Make, BotIntelli</td>
+  </tr>
+  <tr>
+    <td>performance review assistant</td>
+    <td class="bad">0.20</td>
+    <td>0.10</td>
+    <td>1.00</td>
+    <td>0.48</td>
+    <td style="font-size:0.8em">Callstack.ai PR Reviewer, Laviya, PR-Agent, MMLU-Pro Leaderboard, Promptly</td>
+  </tr>
+  <tr>
+    <td>team scheduling and shift planning</td>
+    <td class="good">0.80</td>
+    <td>0.40</td>
+    <td>1.00</td>
+    <td>0.62</td>
+    <td style="font-size:0.8em">Socialsonic, Taskade, OnPlan, MindPal, KOBI</td>
+  </tr>
+  <tr>
+    <td>AI for employee engagement surveys</td>
+    <td class="bad">0.00</td>
+    <td>0.00</td>
+    <td>0.00</td>
+    <td>0.48</td>
+    <td style="font-size:0.8em">Top Contributors To Follow, MMLU-Pro Leaderboard, AutoQuizzer, Aispect, PromptBase</td>
+  </tr>
+  <tr>
+    <td>learning and development course generator</td>
+    <td class="bad">0.20</td>
+    <td>0.10</td>
+    <td>0.63</td>
+    <td>0.65</td>
+    <td style="font-size:0.8em">Bedtime Story Generator, Unit4 Final Certificate, Jeremy Howard’s Fast.ai & Data Institute Certificates, Koji by Brilliant, CurioVerse</td>
+  </tr>
+  <tr>
+    <td>salary benchmarking tool</td>
+    <td class="bad">0.00</td>
+    <td>0.00</td>
+    <td>0.00</td>
+    <td>0.48</td>
+    <td style="font-size:0.8em">YourBench, MoneyRadar, smolagents LLM leaderboard, MMLU-Pro Leaderboard, N8n</td>
+  </tr>
+  <tr>
+    <td>AI reference check automation</td>
+    <td class="bad">0.00</td>
+    <td>0.00</td>
+    <td>0.00</td>
+    <td>0.41</td>
+    <td style="font-size:0.8em">Adon AI, Agent Critiq, Agent X - Papers, Paper Q&A, Doc Mcp</td>
+  </tr>
+  <tr>
+    <td>translate text between languages</td>
+    <td class="good">1.00</td>
+    <td>0.50</td>
+    <td>1.00</td>
+    <td>0.53</td>
+    <td style="font-size:0.8em">Canary 1b V2, PaddleOCR, Emoji Generator, QACAT, OutofLipSync</td>
+  </tr>
+  <tr>
+    <td>AI language learning tutor</td>
+    <td class="bad">0.20</td>
+    <td>0.10</td>
+    <td>1.00</td>
+    <td>0.49</td>
+    <td style="font-size:0.8em">SpeakLearn, InstructBLIP, LLaMA Board, Copycat Cafe, VibeLing 2.0</td>
+  </tr>
+  <tr>
+    <td>real-time speech translation</td>
+    <td class="good">0.60</td>
+    <td>0.30</td>
+    <td>0.95</td>
+    <td>0.26</td>
+    <td style="font-size:0.8em">WellSaid, EKHOS AI, Bark, Play.ht, Voxtral Realtime WebGPU</td>
+  </tr>
+  <tr>
+    <td>localize website content for multiple markets</td>
+    <td class="bad">0.40</td>
+    <td>0.20</td>
+    <td>1.00</td>
+    <td>0.68</td>
+    <td style="font-size:0.8em">AI Marketing Content Generator, PaddleOCR, LangMagic, GoGoHype, LocIn AI</td>
+  </tr>
+  <tr>
+    <td>transcribe and translate meetings</td>
+    <td class="good">0.80</td>
+    <td>0.50</td>
+    <td>0.98</td>
+    <td>0.52</td>
+    <td style="font-size:0.8em">Canary 1b V2, Cohere Transcribe WebGPU, Transcribe Video to Text, LiveTongue, EKHOS AI</td>
+  </tr>
+  <tr>
+    <td>create presentations and slide decks</td>
+    <td class="good">1.00</td>
+    <td>0.50</td>
+    <td>1.00</td>
+    <td>0.60</td>
+    <td style="font-size:0.8em">SlidesWizard, Lumo Studios, Gamma, ScribleSketch, Pitch Agent</td>
+  </tr>
+  <tr>
+    <td>AI for creating pitch decks for startups</td>
+    <td class="bad">0.40</td>
+    <td>0.20</td>
+    <td>1.00</td>
+    <td>0.63</td>
+    <td style="font-size:0.8em">Pitch Agent, VC Boom, FounderOS, PitchFight AI, PosterCraft</td>
+  </tr>
+  <tr>
+    <td>generate executive summary from report</td>
+    <td class="bad">0.40</td>
+    <td>0.20</td>
+    <td>1.00</td>
+    <td>0.52</td>
+    <td style="font-size:0.8em">Summary With AI, Doc To Dialogue, StealthZero, Smmry, Document Summarization</td>
+  </tr>
+  <tr>
+    <td>document comparison and diff tool</td>
+    <td class="good">0.60</td>
+    <td>0.40</td>
+    <td>0.95</td>
+    <td>0.44</td>
+    <td style="font-size:0.8em">Document Summarization, MinerU Document Extraction Tools, Paligemma Doc, Doc To Dialogue, Documents Restoration</td>
+  </tr>
+  <tr>
+    <td>convert PDF to editable Word document</td>
+    <td class="good">0.80</td>
+    <td>0.50</td>
+    <td>0.98</td>
+    <td>0.64</td>
+    <td style="font-size:0.8em">Summary With AI, idmly, Document.Bot - EU/ Offline AI workspace, PDFParsersPlayground, Pdf To Structured Data</td>
+  </tr>
+  <tr>
+    <td>web scraping and data extraction AI</td>
+    <td class="good">1.00</td>
+    <td>0.60</td>
+    <td>1.00</td>
+    <td>0.63</td>
+    <td style="font-size:0.8em">MinerU Document Extraction Tools, Spidra, Web Search MCP, CatchAll by NewsCatcher, Prometheus by Firecrawl</td>
+  </tr>
+  <tr>
+    <td>AI research assistant for literature review</td>
+    <td class="bad">0.20</td>
+    <td>0.10</td>
+    <td>1.00</td>
+    <td>0.60</td>
+    <td style="font-size:0.8em">Elicit, Agent X - Papers, The Smol Training Playbook, Manimator, Tabstack Web Research</td>
+  </tr>
+  <tr>
+    <td>survey analysis and insights generation</td>
+    <td class="good">0.60</td>
+    <td>0.30</td>
+    <td>1.00</td>
+    <td>0.55</td>
+    <td style="font-size:0.8em">Insights by Omnia, ThoughtsOrganizer, Smmry, ResearchOS, Visual Usability Checker</td>
+  </tr>
+  <tr>
+    <td>AI for market trend analysis</td>
+    <td class="good">0.60</td>
+    <td>0.30</td>
+    <td>1.00</td>
+    <td>0.54</td>
+    <td style="font-size:0.8em">MoneyRadar, ResearchOS, Miragic Sales Pilot, Excelmatic, Financial Data API</td>
+  </tr>
+  <tr>
+    <td>automated reporting from spreadsheets</td>
+    <td class="bad">0.40</td>
+    <td>0.20</td>
+    <td>1.00</td>
+    <td>0.63</td>
+    <td style="font-size:0.8em">ezJobs, Clientence, Excelmatic, DATAPIQ, Google Sheets Formula Generator</td>
+  </tr>
+  <tr>
+    <td>AI for personal finance and budgeting</td>
+    <td class="good">0.60</td>
+    <td>0.30</td>
+    <td>1.00</td>
+    <td>0.56</td>
+    <td style="font-size:0.8em">ForwardLens, Spendia, Veltrix AI, FinAdvisor, Leni</td>
+  </tr>
+  <tr>
+    <td>AI recipe generator and meal planner</td>
+    <td class="good">0.60</td>
+    <td>0.30</td>
+    <td>1.00</td>
+    <td>0.67</td>
+    <td style="font-size:0.8em">Mealify 2.0, Bedtime Story Generator, Style Generator, Miragic AI Image Generator, HivRa</td>
+  </tr>
+  <tr>
+    <td>generate business plan from idea</td>
+    <td class="good">0.80</td>
+    <td>0.40</td>
+    <td>1.00</td>
+    <td>0.60</td>
+    <td style="font-size:0.8em">AbsolutelyBomb - Got a daring idea?, Helix, soto, Inuvi, IdeaScore.tech</td>
+  </tr>
+  <tr>
+    <td>AI for real estate property valuation</td>
+    <td class="good">0.60</td>
+    <td>0.30</td>
+    <td>1.00</td>
+    <td>0.51</td>
+    <td style="font-size:0.8em">ReBillion.ai, Listomatic, Leni, Miragic Sales Pilot, MoneyRadar</td>
+  </tr>
+  <tr>
+    <td>no-code app builder with AI</td>
+    <td class="bad">0.40</td>
+    <td>0.20</td>
+    <td>1.00</td>
+    <td>0.51</td>
+    <td style="font-size:0.8em">WeWeb 3.0, Maia by Make, Unit 2.1 smolagents Code Quiz, Kiln, GoCodeo</td>
+  </tr>
+  <tr>
+    <td>AI medical diagnosis assistant</td>
+    <td class="good">1.00</td>
+    <td>0.50</td>
+    <td>1.00</td>
+    <td>0.74</td>
+    <td style="font-size:0.8em">Autonomous Oncology Board, KeptWell, The Interactive Radiology Report, AI Care Companion, Kim Personal Health Assistant</td>
+  </tr>
+  <tr>
+    <td>mental health chatbot and therapy support</td>
+    <td class="good">1.00</td>
+    <td>0.60</td>
+    <td>1.00</td>
+    <td>0.56</td>
+    <td style="font-size:0.8em">GPTHelp.ai, Dear AI, Hayley: Your Thinking Companion, RAG-Chatbot, ChatBot UI With API</td>
+  </tr>
+  <tr>
+    <td>drug interaction checker with AI</td>
+    <td class="bad">0.00</td>
+    <td>0.00</td>
+    <td>0.00</td>
+    <td>0.57</td>
+    <td style="font-size:0.8em">Autonomous Oncology Board, Web Search MCP, Ovis2.5 9B, Appoint Ready - MedGemma Demo, Agent Data Analyst</td>
+  </tr>
+  <tr>
+    <td>AI for clinical note taking</td>
+    <td class="bad">0.20</td>
+    <td>0.10</td>
+    <td>1.00</td>
+    <td>0.65</td>
+    <td style="font-size:0.8em">Patien, Nota: AI Notes & Voice, NuMarkdown 8b Thinking, KeptWell, Nudge AI</td>
+  </tr>
+  <tr>
+    <td>patient symptom checker tool</td>
+    <td class="good">0.60</td>
+    <td>0.30</td>
+    <td>1.00</td>
+    <td>0.66</td>
+    <td style="font-size:0.8em">Juno, AI Care Companion, Patien, Appoint Ready - MedGemma Demo, MedGemma - Radiology Explainer Demo</td>
+  </tr>
+  <tr>
+    <td>AI nutrition and diet planning</td>
+    <td class="good">1.00</td>
+    <td>0.70</td>
+    <td>1.00</td>
+    <td>0.66</td>
+    <td style="font-size:0.8em">HivRa, LabelLens, Fiku App, NuraXe, Adaptive TDEE Calculator</td>
+  </tr>
+  <tr>
+    <td>fitness coaching and workout planner AI</td>
+    <td class="good">1.00</td>
+    <td>0.60</td>
+    <td>1.00</td>
+    <td>0.55</td>
+    <td style="font-size:0.8em">NuraXe, Trainer Gym AI, Whistle, HivRa, Thorax</td>
+  </tr>
+  <tr>
+    <td>AI for medical image analysis</td>
+    <td class="bad">0.20</td>
+    <td>0.10</td>
+    <td>1.00</td>
+    <td>0.51</td>
+    <td style="font-size:0.8em">Autonomous Oncology Board, Supa Fast Image Variations, Libraire, MedGemma - Radiology Explainer Demo, OmniGen2</td>
+  </tr>
+  <tr>
+    <td>telemedicine and remote patient monitoring</td>
+    <td class="good">1.00</td>
+    <td>0.50</td>
+    <td>1.00</td>
+    <td>0.81</td>
+    <td style="font-size:0.8em">RemoteX, Parental Control, Juno, Patien, RCMS® - Smart Dental Clinic Management</td>
+  </tr>
+  <tr>
+    <td>AI for hospital operations and scheduling</td>
+    <td class="bad">0.20</td>
+    <td>0.10</td>
+    <td>1.00</td>
+    <td>0.60</td>
+    <td style="font-size:0.8em">Clinit, Appoint Ready - MedGemma Demo, Autonomous Oncology Board, OctoTools, Ovis2.5 9B</td>
+  </tr>
+  <tr>
+    <td>AI tutor for math and science</td>
+    <td class="bad">0.40</td>
+    <td>0.20</td>
+    <td>1.00</td>
+    <td>0.42</td>
+    <td style="font-size:0.8em">Mathos AI, Anim Lab AI, Open Free - AI Playground, FunctionGemma Physics Playground, Demo Playground</td>
+  </tr>
+  <tr>
+    <td>generate quiz and exam questions automatically</td>
+    <td class="good">0.60</td>
+    <td>0.30</td>
+    <td>1.00</td>
+    <td>0.54</td>
+    <td style="font-size:0.8em">AutoQuizzer, Unit 2.1 smolagents Code Quiz, Play2Practice, GateOS, YourBench</td>
+  </tr>
+  <tr>
+    <td>AI for language pronunciation practice</td>
+    <td class="good">0.60</td>
+    <td>0.30</td>
+    <td>1.00</td>
+    <td>0.43</td>
+    <td style="font-size:0.8em">VibeLing 2.0, SpeakLearn, Copycat Cafe, Fish Agent, MeloTTS</td>
+  </tr>
+  <tr>
+    <td>personalized learning path generator</td>
+    <td class="bad">0.20</td>
+    <td>0.10</td>
+    <td>1.00</td>
+    <td>0.66</td>
+    <td style="font-size:0.8em">ZunoScroll, Rephrase AI, Build Club Campus, Kiln, microgpt Playground</td>
+  </tr>
+  <tr>
+    <td>AI essay grader for teachers</td>
+    <td class="bad">0.20</td>
+    <td>0.10</td>
+    <td>1.00</td>
+    <td>0.50</td>
+    <td style="font-size:0.8em">Thinka IA, NuMarkdown 8b Thinking, Agent X - Papers, GradGPT, Anyword</td>
+  </tr>
+  <tr>
+    <td>create online course content with AI</td>
+    <td class="good">0.60</td>
+    <td>0.30</td>
+    <td>1.00</td>
+    <td>0.48</td>
+    <td style="font-size:0.8em">Contenda, Unit4 Final Certificate, CurioVerse, CoI Agent, Myriad</td>
+  </tr>
+  <tr>
+    <td>AI flashcard generator from notes</td>
+    <td class="bad">0.20</td>
+    <td>0.10</td>
+    <td>1.00</td>
+    <td>0.65</td>
+    <td style="font-size:0.8em">Miragic AI Image Generator, Nota: AI Notes & Voice, Perplexity Clone, Listomatic, StudySong</td>
+  </tr>
+  <tr>
+    <td>coding tutor for beginners</td>
+    <td class="bad">0.40</td>
+    <td>0.20</td>
+    <td>1.00</td>
+    <td>0.48</td>
+    <td style="font-size:0.8em">Boxes.dev, Polygram Coding Agent, GoCodeo, Unit 2.1 smolagents Code Quiz, Amazon CodeWhisperer</td>
+  </tr>
+  <tr>
+    <td>AI for special education and accessibility</td>
+    <td class="bad">0.20</td>
+    <td>0.10</td>
+    <td>1.00</td>
+    <td>0.50</td>
+    <td style="font-size:0.8em">Accessibility AI App, Thinka IA, InstructBLIP, Ovis2 16B, Free AI Humanizer - Bypass AI Detectors</td>
+  </tr>
+  <tr>
+    <td>generate lesson plans automatically</td>
+    <td class="bad">0.20</td>
+    <td>0.10</td>
+    <td>1.00</td>
+    <td>0.58</td>
+    <td style="font-size:0.8em">Hour One, AutoQuizzer, SlidesWizard, AnkiDecks AI, Carbone Skill for AI</td>
+  </tr>
+  <tr>
+    <td>AI for data cleaning and preprocessing</td>
+    <td class="bad">0.20</td>
+    <td>0.10</td>
+    <td>1.00</td>
+    <td>0.58</td>
+    <td style="font-size:0.8em">Agent Data Analyst, Excelmatic, YourBench, gpt4all, BankStatementLab</td>
+  </tr>
+  <tr>
+    <td>automate machine learning model training</td>
+    <td class="good">0.80</td>
+    <td>0.40</td>
+    <td>1.00</td>
+    <td>0.44</td>
+    <td style="font-size:0.8em">AI and Machine Learning Roadmaps, Andrew Ng’s Machine Learning at Stanford University, Roadmap, How To Learn Artificial Intelligence (AI)?, Civitai</td>
+  </tr>
+  <tr>
+    <td>AI for time series forecasting</td>
+    <td class="good">0.60</td>
+    <td>0.30</td>
+    <td>1.00</td>
+    <td>0.44</td>
+    <td style="font-size:0.8em">GIFT Eval, Miragic Sales Pilot, Real Time Stock Predictor, Crypto Price Forecasts, BitDance-14B-64x</td>
+  </tr>
+  <tr>
+    <td>anomaly detection in datasets</td>
+    <td class="bad">0.20</td>
+    <td>0.10</td>
+    <td>1.00</td>
+    <td>0.70</td>
+    <td style="font-size:0.8em">Infinite Dataset Hub, OrchestraML, Sebastian Thrun’s Introduction To Machine Learning, Slack Data Agent, Roadmap</td>
+  </tr>
+  <tr>
+    <td>AI feature engineering assistant</td>
+    <td class="bad">0.20</td>
+    <td>0.10</td>
+    <td>1.00</td>
+    <td>0.51</td>
+    <td style="font-size:0.8em">BobCA, Polygram Coding Agent, Open Free - AI Playground, WithAnyone Demo, DreamO</td>
+  </tr>
+  <tr>
+    <td>explain machine learning model predictions</td>
+    <td class="good">0.80</td>
+    <td>0.40</td>
+    <td>1.00</td>
+    <td>0.44</td>
+    <td style="font-size:0.8em">AI and Machine Learning Roadmaps, Andrew Ng’s Machine Learning at Stanford University, Roadmap, How To Learn Artificial Intelligence (AI)?, Civitai</td>
+  </tr>
+  <tr>
+    <td>AI for A/B test analysis</td>
+    <td class="good">0.60</td>
+    <td>0.30</td>
+    <td>1.00</td>
+    <td>0.57</td>
+    <td style="font-size:0.8em">Unit 1 Quiz - AI Agent Fundementals, Miragic Sales Pilot, OpenAPI Spec Analyzer, Agent Mode on Arena, Agent Data Analyst</td>
+  </tr>
+  <tr>
+    <td>automated data visualization from CSV</td>
+    <td class="bad">0.40</td>
+    <td>0.20</td>
+    <td>1.00</td>
+    <td>0.56</td>
+    <td style="font-size:0.8em">Chartbuilder, Excelmatic, Fake Data Generator (JSONL), Slack Data Agent, Agent Data Analyst</td>
+  </tr>
+  <tr>
+    <td>AI for ETL pipeline automation</td>
+    <td class="bad">0.40</td>
+    <td>0.20</td>
+    <td>1.00</td>
+    <td>0.48</td>
+    <td style="font-size:0.8em">Context Data, Adon AI, Maia by Make, Taskade, Pipedock.io</td>
+  </tr>
+  <tr>
+    <td>natural language interface for databases</td>
+    <td class="bad">0.20</td>
+    <td>0.10</td>
+    <td>1.00</td>
+    <td>0.62</td>
+    <td style="font-size:0.8em">OpenAI API, LMQL, Balladic, LangChain, Bing Chat</td>
+  </tr>
+  <tr>
+    <td>AI product recommendation engine</td>
+    <td class="good">0.60</td>
+    <td>0.30</td>
+    <td>0.85</td>
+    <td>0.59</td>
+    <td style="font-size:0.8em">Netflix Recommendation, Envoyra, GummySearch, AI Product Adoption Deck, MemFree</td>
+  </tr>
+  <tr>
+    <td>dynamic pricing tool for online store</td>
+    <td class="good">0.80</td>
+    <td>0.40</td>
+    <td>0.90</td>
+    <td>0.68</td>
+    <td style="font-size:0.8em">Pricing Roaster, GOSH, Hoursmith, Fieldpaid, Fast Shop</td>
+  </tr>
+  <tr>
+    <td>AI for inventory management</td>
+    <td class="bad">0.20</td>
+    <td>0.10</td>
+    <td>1.00</td>
+    <td>0.49</td>
+    <td style="font-size:0.8em">NovaMind AI, AI E-Commerce Fashion, Miragic Sales Pilot, Prompt & Dump - AI NPC Trading Arena, J.A.R.V.I.S.</td>
+  </tr>
+  <tr>
+    <td>generate product titles and SEO descriptions</td>
+    <td class="good">0.80</td>
+    <td>0.40</td>
+    <td>1.00</td>
+    <td>0.74</td>
+    <td style="font-size:0.8em">Image Describer, Growati, Hypotenuse AI, HostCopy, MusicLM</td>
+  </tr>
+  <tr>
+    <td>AI chatbot for Shopify store</td>
+    <td class="good">0.60</td>
+    <td>0.30</td>
+    <td>0.97</td>
+    <td>0.32</td>
+    <td style="font-size:0.8em">RAG-Chatbot, ChatBot UI With API, OpenCHAT Mini, Llama 3.2 WebGPU, SmolLM 360M Instruct WebGPU</td>
+  </tr>
+  <tr>
+    <td>visual search for fashion e-commerce</td>
+    <td class="good">0.60</td>
+    <td>0.40</td>
+    <td>0.85</td>
+    <td>0.54</td>
+    <td style="font-size:0.8em">AI E-Commerce Fashion, VELVET AI, Kazimir.ai, Fashion Try-On, Monoshoot</td>
+  </tr>
+  <tr>
+    <td>AI for returns and refund automation</td>
+    <td class="good">0.60</td>
+    <td>0.30</td>
+    <td>1.00</td>
+    <td>0.55</td>
+    <td style="font-size:0.8em">FirmOS, Adon AI, ReBillion.ai, StoreClaw, AI Freelance Starter Pack</td>
+  </tr>
+  <tr>
+    <td>customer lifetime value prediction</td>
+    <td class="bad">0.40</td>
+    <td>0.20</td>
+    <td>1.00</td>
+    <td>0.65</td>
+    <td style="font-size:0.8em">Dear AI, Deckly, GummySearch, Gigacatalyst, Miragic Sales Pilot</td>
+  </tr>
+  <tr>
+    <td>AI for abandoned cart recovery</td>
+    <td class="bad">0.20</td>
+    <td>0.10</td>
+    <td>1.00</td>
+    <td>0.55</td>
+    <td style="font-size:0.8em">CLI Market — Commerce APIs for AI Agents, Prompt & Dump - AI NPC Trading Arena, VLM Object Understanding, ERNIE-4.5-VL-28B-A3B-Thinking Demo, Ovis2.5 9B</td>
+  </tr>
+  <tr>
+    <td>review analysis and response automation</td>
+    <td class="bad">0.20</td>
+    <td>0.10</td>
+    <td>1.00</td>
+    <td>0.75</td>
+    <td style="font-size:0.8em">QACAT, Elicit, TrustCart, PR-Agent, Nuansly</td>
+  </tr>
+  <tr>
+    <td>AI music composition from scratch</td>
+    <td class="good">0.60</td>
+    <td>0.30</td>
+    <td>0.91</td>
+    <td>0.28</td>
+    <td style="font-size:0.8em">Remusic, MusicLM, Ecrett Music, AI Music Generator, Di♪♪Rhythm</td>
+  </tr>
+  <tr>
+    <td>stem separation and audio isolation</td>
+    <td class="good">0.80</td>
+    <td>0.70</td>
+    <td>1.00</td>
+    <td>0.41</td>
+    <td style="font-size:0.8em">TIGER Audio Extractor, ClearerVoice-Studio (Speech Enhancement, Separation and Extraction), VocalReplica, Audio🔹Separator, Stable Audio 3.0</td>
+  </tr>
+  <tr>
+    <td>AI mastering and mixing tool</td>
+    <td class="bad">0.00</td>
+    <td>0.00</td>
+    <td>0.00</td>
+    <td>0.29</td>
+    <td style="font-size:0.8em">Audiomaster.ai, StableSounds.ai, ACE Step, Auffusion, — AI Jukebox —</td>
+  </tr>
+  <tr>
+    <td>generate sound effects from text</td>
+    <td class="good">0.60</td>
+    <td>0.30</td>
+    <td>1.00</td>
+    <td>0.41</td>
+    <td style="font-size:0.8em">Sound AI SFX, StableSounds.ai, Play.ht, Realistic Text To Speech Unlimited, MusicLM</td>
+  </tr>
+  <tr>
+    <td>AI DJ and playlist curator</td>
+    <td class="bad">0.00</td>
+    <td>0.00</td>
+    <td>0.00</td>
+    <td>0.25</td>
+    <td style="font-size:0.8em">Audiomaster.ai, Heartmula, — AI Jukebox —, ACE Step, Sing an idea ➡️ Music</td>
+  </tr>
+  <tr>
+    <td>voice enhancement and noise removal</td>
+    <td class="bad">0.40</td>
+    <td>0.20</td>
+    <td>0.85</td>
+    <td>0.45</td>
+    <td style="font-size:0.8em">ClearerVoice-Studio (Speech Enhancement, Separation and Extraction), Audify AI, Respeecher, Microsoft Azure Neural TTS, Vibe Voice Custom Voices</td>
+  </tr>
+  <tr>
+    <td>AI for podcast editing and cleanup</td>
+    <td class="good">1.00</td>
+    <td>0.70</td>
+    <td>1.00</td>
+    <td>0.30</td>
+    <td style="font-size:0.8em">Daily Paper Podcast, Voice Clone AI Podcast, Podcastify, podcast.ai, Audio Editing</td>
+  </tr>
+  <tr>
+    <td>MIDI generation from humming</td>
+    <td class="good">0.80</td>
+    <td>0.50</td>
+    <td>1.00</td>
+    <td>0.40</td>
+    <td style="font-size:0.8em">Advanced MIDI Renderer, ByteDance Solo Piano Audio To MIDI Transcription, RWKV Music, Di♪♪Rhythm, Mubert</td>
+  </tr>
+  <tr>
+    <td>AI lyric writing assistant</td>
+    <td class="bad">0.40</td>
+    <td>0.30</td>
+    <td>1.00</td>
+    <td>0.26</td>
+    <td style="font-size:0.8em">Yomu, Anyword, Jasper, Moonbeam, Shy Editor</td>
+  </tr>
+  <tr>
+    <td>audio transcription with speaker diarization</td>
+    <td class="good">1.00</td>
+    <td>0.50</td>
+    <td>1.00</td>
+    <td>0.42</td>
+    <td style="font-size:0.8em">Descript Overdub, Voxtral WebGPU, EKHOS AI, Echo-TTS Preview, Transcribe Video to Text</td>
+  </tr>
+  <tr>
+    <td>AI contract drafting and review</td>
+    <td class="bad">0.40</td>
+    <td>0.20</td>
+    <td>1.00</td>
+    <td>0.71</td>
+    <td style="font-size:0.8em">fynk, GradGPT, LeaseScale, AskMurdock, VIDI</td>
+  </tr>
+  <tr>
+    <td>GDPR compliance checker</td>
+    <td class="good">0.60</td>
+    <td>0.30</td>
+    <td>1.00</td>
+    <td>0.58</td>
+    <td style="font-size:0.8em">FARSITE, DataCloser, Berly, OpenClaw Business, SEOReport</td>
+  </tr>
+  <tr>
+    <td>AI for intellectual property research</td>
+    <td class="bad">0.40</td>
+    <td>0.20</td>
+    <td>1.00</td>
+    <td>0.52</td>
+    <td style="font-size:0.8em">Agent X - Papers, Manimator, Web Researcher MCP, CoI Agent, Open Source Ai Year In Review 2024</td>
+  </tr>
+  <tr>
+    <td>legal research and case law finder</td>
+    <td class="good">1.00</td>
+    <td>0.50</td>
+    <td>1.00</td>
+    <td>0.75</td>
+    <td style="font-size:0.8em">Cleo Atlas Legal API, ReGuardian, CaseGap AI, Notum, Tabstack Web Research</td>
+  </tr>
+  <tr>
+    <td>AI for terms and conditions generation</td>
+    <td class="bad">0.00</td>
+    <td>0.00</td>
+    <td>0.00</td>
+    <td>0.36</td>
+    <td style="font-size:0.8em">MOSS TTSD, Ovis U1 3B, NuMarkdown 8b Thinking, Chat With Janus 1.3B, Pangea</td>
+  </tr>
+  <tr>
+    <td>compliance monitoring automation</td>
+    <td class="good">0.80</td>
+    <td>0.40</td>
+    <td>1.00</td>
+    <td>0.55</td>
+    <td style="font-size:0.8em">FARSITE, FirmOS, Adrian, Adon AI, Gateplex</td>
+  </tr>
+  <tr>
+    <td>AI paralegal assistant</td>
+    <td class="bad">0.40</td>
+    <td>0.20</td>
+    <td>1.00</td>
+    <td>0.47</td>
+    <td style="font-size:0.8em">Lemmy, aiPDF, Refinder AI, ClawRunway, Agent X - Papers</td>
+  </tr>
+  <tr>
+    <td>trademark and patent search AI</td>
+    <td class="good">0.80</td>
+    <td>0.60</td>
+    <td>0.96</td>
+    <td>0.59</td>
+    <td style="font-size:0.8em">Patent Gnome, Refinder AI, Agentset.ai, Kazimir.ai, Awesome AI Web Search</td>
+  </tr>
+  <tr>
+    <td>AI for regulatory document analysis</td>
+    <td class="good">0.80</td>
+    <td>0.40</td>
+    <td>0.98</td>
+    <td>0.45</td>
+    <td style="font-size:0.8em">Document Summarization, MinerU Document Extraction Tools, Paligemma Doc, GLM OCR Demo, aiPDF</td>
+  </tr>
+  <tr>
+    <td>due diligence automation tool</td>
+    <td class="bad">0.40</td>
+    <td>0.20</td>
+    <td>1.00</td>
+    <td>0.40</td>
+    <td style="font-size:0.8em">Workflow Automation Softwares, Adon AI, N8n, Enterprise Hub, Nymbo Tools MCP</td>
+  </tr>
+  <tr>
+    <td>AI stock market analysis and prediction</td>
+    <td class="good">0.60</td>
+    <td>0.30</td>
+    <td>0.97</td>
+    <td>0.60</td>
+    <td style="font-size:0.8em">Real Time Stock Predictor, MoneyRadar, Miragic Sales Pilot, FinAdvisor, Excelmatic</td>
+  </tr>
+  <tr>
+    <td>automated accounting and bookkeeping</td>
+    <td class="bad">0.40</td>
+    <td>0.20</td>
+    <td>1.00</td>
+    <td>0.61</td>
+    <td style="font-size:0.8em">DATAPIQ, FirmOS, BankStatementLab, ForwardLens, Spendia</td>
+  </tr>
+  <tr>
+    <td>AI for fraud detection</td>
+    <td class="bad">0.00</td>
+    <td>0.00</td>
+    <td>0.00</td>
+    <td>0.49</td>
+    <td style="font-size:0.8em">MoneyRadar, Prompt & Dump - AI NPC Trading Arena, AI Text Detector, Adon AI, FirmOS</td>
+  </tr>
+  <tr>
+    <td>personal investment portfolio optimizer</td>
+    <td class="good">0.60</td>
+    <td>0.30</td>
+    <td>1.00</td>
+    <td>0.72</td>
+    <td style="font-size:0.8em">FinAdvisor, Asset Quadrant, Moneyball, QuantisticAI, Leni</td>
+  </tr>
+  <tr>
+    <td>AI tax preparation assistant</td>
+    <td class="bad">0.40</td>
+    <td>0.20</td>
+    <td>1.00</td>
+    <td>0.64</td>
+    <td style="font-size:0.8em">NAADI, aiPDF, DATAPIQ, Refinder AI, Open Free - AI Playground</td>
+  </tr>
+  <tr>
+    <td>expense categorization from receipts</td>
+    <td class="good">0.80</td>
+    <td>0.40</td>
+    <td>1.00</td>
+    <td>0.53</td>
+    <td style="font-size:0.8em">Casha, Baguni, Spendia, DATAPIQ, SpendBar</td>
+  </tr>
+  <tr>
+    <td>AI for loan underwriting</td>
+    <td class="bad">0.20</td>
+    <td>0.10</td>
+    <td>1.00</td>
+    <td>0.62</td>
+    <td style="font-size:0.8em">Arera, MoneyRadar, Miragic Sales Pilot, GradGPT, Agent Data Analyst</td>
+  </tr>
+  <tr>
+    <td>cryptocurrency trading bot</td>
+    <td class="good">0.60</td>
+    <td>0.30</td>
+    <td>1.00</td>
+    <td>0.68</td>
+    <td style="font-size:0.8em">Prompt & Dump - AI NPC Trading Arena, Robinhood Agentic Trading, SignalRelayer, Cached Claude API, Crypto Price Forecasts</td>
+  </tr>
+  <tr>
+    <td>financial report generation from data</td>
+    <td class="good">0.60</td>
+    <td>0.30</td>
+    <td>1.00</td>
+    <td>0.64</td>
+    <td style="font-size:0.8em">Financial Data API, Veltrix AI, BankStatementLab, FinAdvisor, Excelmatic</td>
+  </tr>
+  <tr>
+    <td>AI for insurance claims processing</td>
+    <td class="bad">0.00</td>
+    <td>0.00</td>
+    <td>0.00</td>
+    <td>0.40</td>
+    <td style="font-size:0.8em">OctoTools, Agent Data Analyst, Ovis2.5 9B, Adon AI, Open Free - AI Playground</td>
+  </tr>
+  <tr>
+    <td>make videos with AI</td>
+    <td class="bad">0.40</td>
+    <td>0.20</td>
+    <td>0.88</td>
+    <td>0.28</td>
+    <td style="font-size:0.8em">Openai Sora, Helios 14B RealTime AOTI, Clipwing, Synthesia, ShortVideoGen</td>
+  </tr>
+  <tr>
+    <td>write emails faster</td>
+    <td class="good">0.60</td>
+    <td>0.30</td>
+    <td>0.97</td>
+    <td>0.64</td>
+    <td style="font-size:0.8em">HyperWrite, Lex, Emilio, ChatGPT Writer, Jasper</td>
+  </tr>
+  <tr>
+    <td>fix my code</td>
+    <td class="bad">0.20</td>
+    <td>0.10</td>
+    <td>1.00</td>
+    <td>0.45</td>
+    <td style="font-size:0.8em">GPT-Code UI, GoCodeo, Unit 2.1 smolagents Code Quiz, Code to Flow, CodeRabbit</td>
+  </tr>
+  <tr>
+    <td>talk to AI</td>
+    <td class="bad">0.40</td>
+    <td>0.20</td>
+    <td>1.00</td>
+    <td>0.50</td>
+    <td style="font-size:0.8em">Contemplative moondream, Shyguy's Wingman, Ovis2 16B, PromptPal, ERNIE-4.5-VL-28B-A3B-Thinking Demo</td>
+  </tr>
+  <tr>
+    <td>edit photos</td>
+    <td class="good">0.80</td>
+    <td>0.50</td>
+    <td>1.00</td>
+    <td>0.27</td>
+    <td style="font-size:0.8em">Restore Photos, Qwen Image Edit Inpaint, Step1X Edit, Qwen Image Edit Outpaint, Qwen Image Edit Fast 4-Step (Multi+Presets)</td>
+  </tr>
+  <tr>
+    <td>summarize this</td>
+    <td class="bad">0.40</td>
+    <td>0.20</td>
+    <td>1.00</td>
+    <td>0.65</td>
+    <td style="font-size:0.8em">Smmry, Summary With AI, Gistr, Lucidly — Finally say what you mean., Axona</td>
+  </tr>
+  <tr>
+    <td>translate document</td>
+    <td class="good">0.60</td>
+    <td>0.30</td>
+    <td>0.97</td>
+    <td>0.51</td>
+    <td style="font-size:0.8em">Canary 1b V2, OutofLipSync, Paligemma Doc, Doc To Dialogue, TranslateGemma 4B WebGPU</td>
+  </tr>
+  <tr>
+    <td>find leads</td>
+    <td class="good">0.80</td>
+    <td>0.40</td>
+    <td>1.00</td>
+    <td>0.71</td>
+    <td style="font-size:0.8em">Bildy.ai, SignalLEMO - Ai Outreach Made Simple, Linky, Dialbotix, DataCloser</td>
+  </tr>
+  <tr>
+    <td>automate tasks</td>
+    <td class="good">0.80</td>
+    <td>0.40</td>
+    <td>1.00</td>
+    <td>0.59</td>
+    <td style="font-size:0.8em">TailorTask, Nekton AI, Manus Scheduled Tasks 2.0, SiteSpeakAI, Control</td>
+  </tr>
+  <tr>
+    <td>analyze data</td>
+    <td class="good">0.60</td>
+    <td>0.30</td>
+    <td>1.00</td>
+    <td>0.62</td>
+    <td style="font-size:0.8em">Agent Data Analyst, Slack Data Agent, Code to Flow, Excelmatic, NC Data</td>
+  </tr>
+  <tr>
+    <td>genrate images from text</td>
+    <td class="good">0.60</td>
+    <td>0.30</td>
+    <td>1.00</td>
+    <td>0.40</td>
+    <td style="font-size:0.8em">UNO FLUX, PaddleOCR, Stable Diffusion, Anima V1 ZeroGPU Demo, FLUX - EVERY TEXT Imaginator</td>
+  </tr>
+  <tr>
+    <td>custmer suport chatbot</td>
+    <td class="good">0.80</td>
+    <td>0.60</td>
+    <td>1.00</td>
+    <td>0.30</td>
+    <td style="font-size:0.8em">RAG-Chatbot, Chatbot UI, OpenCHAT Mini, Llama 3.2 WebGPU, SmolLM 360M Instruct WebGPU</td>
+  </tr>
+  <tr>
+    <td>seo keword reserch</td>
+    <td class="good">1.00</td>
+    <td>0.80</td>
+    <td>1.00</td>
+    <td>0.52</td>
+    <td style="font-size:0.8em">SEO Scrubbox, GeoReady, Areza Digital, IvaBot, Greater Than Services</td>
+  </tr>
+  <tr>
+    <td>video editng tool</td>
+    <td class="good">0.60</td>
+    <td>0.40</td>
+    <td>0.95</td>
+    <td>0.23</td>
+    <td style="font-size:0.8em">Omni Video Factory, Instant Video, Text Behind Video, Edit Video By Editing Text, Video Generation Leaderboard</td>
+  </tr>
+  <tr>
+    <td>AI for Dungeons and Dragons dungeon master</td>
+    <td class="bad">0.00</td>
+    <td>0.00</td>
+    <td>0.00</td>
+    <td>0.38</td>
+    <td style="font-size:0.8em">Agent Leaderboard, Doc Mcp, Prompt & Dump - AI NPC Trading Arena, Open Free - AI Playground, Lmgame Bench</td>
+  </tr>
+  <tr>
+    <td>generate tattoo designs with AI</td>
+    <td class="good">0.60</td>
+    <td>0.30</td>
+    <td>1.00</td>
+    <td>0.57</td>
+    <td style="font-size:0.8em">AIMakeTattoo, PlantTattoosAI, MakeLineArt, UNO FLUX, 1040 AI Art Models Printing Press</td>
+  </tr>
+  <tr>
+    <td>AI for wine pairing recommendations</td>
+    <td class="bad">0.00</td>
+    <td>0.00</td>
+    <td>0.00</td>
+    <td>0.57</td>
+    <td style="font-size:0.8em">Netflix Recommendation, Taranify, AI E-Commerce Fashion, Envoyra, Think in Sync</td>
+  </tr>
+  <tr>
+    <td>dream interpretation AI</td>
+    <td class="bad">0.20</td>
+    <td>0.10</td>
+    <td>1.00</td>
+    <td>0.42</td>
+    <td style="font-size:0.8em">Dream of Ikea, Contemplative moondream, DreamOmni2 Edit, DreamO, Ovis U1 3B</td>
+  </tr>
+  <tr>
+    <td>AI for astrology and horoscope generation</td>
+    <td class="bad">0.20</td>
+    <td>0.10</td>
+    <td>1.00</td>
+    <td>0.56</td>
+    <td style="font-size:0.8em">AstroVoice API, Ovis U1 3B, imgsys.org, Chat With Llama3 8b, KathaGPT</td>
+  </tr>
+  <tr>
+    <td>AI for sports performance analytics</td>
+    <td class="bad">0.20</td>
+    <td>0.10</td>
+    <td>1.00</td>
+    <td>0.70</td>
+    <td style="font-size:0.8em">Play Reflect, NuraXe, Leaderboard of Smol Worldcup, MMLU-Pro Leaderboard, YourBench</td>
+  </tr>
+  <tr>
+    <td>generate children story with illustrations</td>
+    <td class="good">0.80</td>
+    <td>0.40</td>
+    <td>1.00</td>
+    <td>0.72</td>
+    <td style="font-size:0.8em">Bedtime Story Generator, Lumio, AI Dungeon, Our Stories, GenShare</td>
+  </tr>
+  <tr>
+    <td>AI interior architect for home renovation</td>
+    <td class="good">0.80</td>
+    <td>0.40</td>
+    <td>1.00</td>
+    <td>0.56</td>
+    <td style="font-size:0.8em">Dream of Ikea, ProAssist, Room Reinvented, Drafted, Architecture Helper</td>
+  </tr>
+  <tr>
+    <td>AI for supply chain optimization</td>
+    <td class="bad">0.40</td>
+    <td>0.20</td>
+    <td>1.00</td>
+    <td>0.60</td>
+    <td style="font-size:0.8em">PartFinder, CoI Agent, NovaMind AI, Miragic Sales Pilot, Prompt & Dump - AI NPC Trading Arena</td>
+  </tr>
+  <tr>
+    <td>turn handwritten notes into digital text</td>
+    <td class="bad">0.20</td>
+    <td>0.10</td>
+    <td>1.00</td>
+    <td>0.64</td>
+    <td style="font-size:0.8em">HTRflow App, Slownotes, Nota: AI Notes & Voice, Anima V1 ZeroGPU Demo, ScribleSketch</td>
+  </tr>
+  <tr>
+    <td>AI for grant writing and fundraising</td>
+    <td class="bad">0.20</td>
+    <td>0.20</td>
+    <td>1.00</td>
+    <td>0.35</td>
+    <td style="font-size:0.8em">Fundraisly, copy.ai, Copysmith, Moonbeam, Jasper</td>
+  </tr>
+  <tr>
+    <td>generate memes and viral content with AI</td>
+    <td class="good">0.80</td>
+    <td>0.40</td>
+    <td>1.00</td>
+    <td>0.56</td>
+    <td style="font-size:0.8em">RobinOS, Open Meme Studio, AutoSubtitles 2.0, StoryHatch, Luthor</td>
+  </tr>
+  <tr>
+    <td>AI for event planning and management</td>
+    <td class="bad">0.20</td>
+    <td>0.10</td>
+    <td>1.00</td>
+    <td>0.58</td>
+    <td style="font-size:0.8em">Cirqly Event Planner, Taskade, Angle, TravelPlanner, Aispect</td>
+  </tr>
+  <tr>
+    <td>detect plagiarism in documents</td>
+    <td class="bad">0.40</td>
+    <td>0.20</td>
+    <td>1.00</td>
+    <td>0.80</td>
+    <td style="font-size:0.8em">AI Text Detector, Parsewise API, Paligemma Doc, StealthZero, Aicite</td>
+  </tr>
+  <tr>
+    <td>AI for news summarization and briefing</td>
+    <td class="bad">0.40</td>
+    <td>0.20</td>
+    <td>1.00</td>
+    <td>0.59</td>
+    <td style="font-size:0.8em">Document Summarization, News Beast, Paligemma Doc, The Essential AI Toolkit, Headlinesai.pro</td>
+  </tr>
+  <tr>
+    <td>AI avatar for virtual meetings</td>
+    <td class="good">0.80</td>
+    <td>0.40</td>
+    <td>1.00</td>
+    <td>0.54</td>
+    <td style="font-size:0.8em">LongCat-Video-Avatar 1.5, Avatar AI, Cogram, LAM, OOTDiffusion</td>
+  </tr>
+  <tr>
+    <td>generate social media calendar automatically</td>
+    <td class="bad">0.40</td>
+    <td>0.20</td>
+    <td>1.00</td>
+    <td>0.70</td>
+    <td style="font-size:0.8em">RobinOS, GoGoHype, Buffer API, Sketella, Text2Calendar</td>
+  </tr>
+  <tr>
+    <td>AI for scientific research paper writing</td>
+    <td class="bad">0.20</td>
+    <td>0.10</td>
+    <td>1.00</td>
+    <td>0.33</td>
+    <td style="font-size:0.8em">Paper Q&A, RapidTextAI, Moonbeam, Yomu, Jasper</td>
+  </tr>
+  <tr>
+    <td>chatbot for mental wellness and journaling</td>
+    <td class="good">0.60</td>
+    <td>0.30</td>
+    <td>1.00</td>
+    <td>0.36</td>
+    <td style="font-size:0.8em">RAG-Chatbot, Chatbot UI, Llama 3.2 WebGPU, Dear AI, GPTHelp.ai</td>
+  </tr>
+  <tr>
+    <td>AI for customer churn prediction</td>
+    <td class="bad">0.40</td>
+    <td>0.20</td>
+    <td>1.00</td>
+    <td>0.52</td>
+    <td style="font-size:0.8em">SiteGPT, Dear AI, Cald.ai, GummySearch, Forward</td>
+  </tr>
+  <tr>
+    <td>generate wireframes and UI mockups with AI</td>
+    <td class="bad">0.40</td>
+    <td>0.20</td>
+    <td>1.00</td>
+    <td>0.58</td>
+    <td style="font-size:0.8em">ImageN'You, Magic Patterns, M1 by Montage, Freu AI, Sparc3D</td>
+  </tr>
+  <tr>
+    <td>AI for cybersecurity threat detection</td>
+    <td class="bad">0.00</td>
+    <td>0.00</td>
+    <td>0.00</td>
+    <td>0.32</td>
+    <td style="font-size:0.8em">Agent X - Papers, CoI Agent, Ovis2 16B, Open Free - AI Playground, Awesome AI Web Search</td>
+  </tr>
+  <tr>
+    <td>voice assistant for smart home devices</td>
+    <td class="bad">0.00</td>
+    <td>0.00</td>
+    <td>0.00</td>
+    <td>0.47</td>
+    <td style="font-size:0.8em">Play.ht, Guappa, Thinnest AI, WellSaid, TEN Agent Demo</td>
+  </tr>
+  <tr>
+    <td>AI for travel itinerary planning</td>
+    <td class="good">1.00</td>
+    <td>0.80</td>
+    <td>1.00</td>
+    <td>0.58</td>
+    <td style="font-size:0.8em">TravelPlanner, Globe Thrivers Beta, AI Travel Planner, Wimemo - Travel photo map, Latent Navigation</td>
+  </tr>
+  <tr>
+    <td>generate subtitles and closed captions</td>
+    <td class="good">0.60</td>
+    <td>0.30</td>
+    <td>1.00</td>
+    <td>0.57</td>
+    <td style="font-size:0.8em">AutoSubtitles 2.0, Marlin 2B Video Understanding, StoryHatch, ytskim, Play.ht</td>
+  </tr>
+</table>
+</body>
+</html>

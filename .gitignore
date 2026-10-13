@@ -1,0 +1,35 @@
+# Secrets — never commit these
+.env
+
+# Data files (tracked by DVC instead)
+data/raw_taaft.csv
+data/raw_producthunt.csv
+data/raw_tools.csv
+data/clean_tools.csv
+data/annotated_tools.json
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+dist/
+build/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# IDE
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# W&B
+wandb/
+
+# Qdrant local storage
+qdrant_storage/

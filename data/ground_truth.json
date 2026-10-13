@@ -1,0 +1,3072 @@
+[
+  {
+    "query": "generate AI-powered videos for YouTube",
+    "relevant_tools": [
+      "Narasi AI",
+      "YouTube Summary with ChatGPT",
+      "uMood",
+      "CLICKABOOM",
+      "ytskim",
+      "Lance",
+      "Vidrunner",
+      "Growati",
+      "Openai Sora",
+      "ScouTube"
+    ]
+  },
+  {
+    "query": "text to video generation tool",
+    "relevant_tools": [
+      "Video Generation Leaderboard",
+      "Synthesia",
+      "Sisif",
+      "ShortVideoGen",
+      "Hour One",
+      "FramePack F1",
+      "klingai",
+      "Based AI",
+      "Text Behind Video",
+      "Clipwing"
+    ]
+  },
+  {
+    "query": "AI video editor for short clips",
+    "relevant_tools": [
+      "Clipwing",
+      "OutofLipSync",
+      "ShortVideoGen",
+      "Clipline",
+      "MeetGeek",
+      "motionvid.ai",
+      "Expression Editor",
+      "Ava Studio",
+      "Omni Image Editor",
+      "Shy Editor"
+    ]
+  },
+  {
+    "query": "create talking avatar from text",
+    "relevant_tools": [
+      "LongCat-Video-Avatar 1.5",
+      "Avatar AI",
+      "TTS x Hallo Talking Portrait",
+      "D-ID",
+      "MoDA Fast Talking Head",
+      "Text Behind Video",
+      "LAM",
+      "Synthesia",
+      "ShortVideoGen",
+      "SORA 3D"
+    ]
+  },
+  {
+    "query": "convert blog post to video automatically",
+    "relevant_tools": [
+      "Convert to ONNX",
+      "One URL → Full Content Suite",
+      "Hour One",
+      "Convert 2D Images To 3D High Quality Objects",
+      "Growati",
+      "MeetGeek",
+      "Perplexity Clone",
+      "PDFParsersPlayground",
+      "Perch Reader",
+      "Quick Creator"
+    ]
+  },
+  {
+    "query": "transcribe audio and video to text",
+    "relevant_tools": [
+      "Transcribe Video to Text",
+      "EKHOS AI",
+      "Edit Video By Editing Text",
+      "ShortVideoGen",
+      "Cosmos3-Nano",
+      "Cohere Transcribe WebGPU",
+      "Cosmos",
+      "CreateEasily",
+      "Text Behind Video",
+      "Audio Editing"
+    ]
+  },
+  {
+    "query": "generate podcast from text",
+    "relevant_tools": [
+      "podcast.ai",
+      "OmniAvatar",
+      "Voice Clone AI Podcast",
+      "Daily Paper Podcast",
+      "Zenmic.com",
+      "AInterview.space",
+      "Podcastify",
+      "Kimodo",
+      "DeepseekJanusPro",
+      "Play.ht"
+    ]
+  },
+  {
+    "query": "voice cloning for content creation",
+    "relevant_tools": [
+      "MegaTTS 3 Voice Cloning",
+      "Voice Cloning Studio",
+      "Descript Overdub",
+      "Veritone Voice",
+      "ElevenLabs",
+      "TTS WebUI",
+      "Copysmith",
+      "Zenmic.com",
+      "Audify AI",
+      "Respeecher"
+    ]
+  },
+  {
+    "query": "AI dubbing tool for translation",
+    "relevant_tools": [
+      "Video Dubbing (SoniTranslate)",
+      "IndicTrans3 - Next-Gen Indic Language Translation",
+      "Overline",
+      "Amazon Q Developer CLI",
+      "KathaGPT",
+      "Localify",
+      "Vaani",
+      "ThaiPo",
+      "QACAT",
+      "VibeLing 2.0"
+    ]
+  },
+  {
+    "query": "automatic captions and subtitles",
+    "relevant_tools": [
+      "AutoSubtitles 2.0",
+      "Overline",
+      "Riffo",
+      "VEO3 Directors",
+      "Blip Image Captioning Large",
+      "Cogram",
+      "Marlin 2B Video Understanding",
+      "Clipline",
+      "audien.to",
+      "DualCap"
+    ]
+  },
+  {
+    "query": "write better marketing copy and emails",
+    "relevant_tools": [
+      "copy.ai",
+      "Brew",
+      "PostPaper",
+      "mailX by mailwarm",
+      "KryxAI",
+      "1ClickReport — Marketing AI in Claude",
+      "ZipTier",
+      "DeepL Write",
+      "Mailento",
+      "DataCloser"
+    ]
+  },
+  {
+    "query": "AI writing assistant for blog posts",
+    "relevant_tools": [
+      "Quick Creator",
+      "Postwise",
+      "Yomu",
+      "Jenni",
+      "Anyword",
+      "Rytr",
+      "Lavender",
+      "Elephas",
+      "Typeahead",
+      "ittrr"
+    ]
+  },
+  {
+    "query": "long-form content generator for articles",
+    "relevant_tools": [
+      "Myriad",
+      "AI Marketing Content Generator",
+      "Smmry",
+      "Trolly.ai",
+      "Human Generator",
+      "AI 3D Model Generator",
+      "Style Generator",
+      "Character Generator",
+      "QR Code AI Art Generator",
+      "Bedtime Story Generator"
+    ]
+  },
+  {
+    "query": "grammar and style checker for documents",
+    "relevant_tools": [
+      "Visual Usability Checker",
+      "DiscloseKit Checker",
+      "Documents Restoration",
+      "Flux Style Shaping",
+      "Zen Style Shape",
+      "Style Generator",
+      "Openstatus MCP Health Checker",
+      "Multi-Style Video-to-Anime Generator",
+      "DualCap",
+      "OmniAvatar"
+    ]
+  },
+  {
+    "query": "paraphrase and rewrite sentences",
+    "relevant_tools": [
+      "Goldfish",
+      "Andika AI",
+      "Fiktion",
+      "Keyboard Copilot",
+      "DualCap",
+      "Hooked_AI",
+      "Olyx",
+      "Henji"
+    ]
+  },
+  {
+    "query": "AI tool for academic writing and citations",
+    "relevant_tools": [
+      "Sourcely",
+      "Agent X - Papers",
+      "genei",
+      "Explainpaper",
+      "Jenni",
+      "Web Researcher MCP",
+      "Yomu",
+      "Anyword",
+      "DeepL Write",
+      "Rytr"
+    ]
+  },
+  {
+    "query": "generate product descriptions for e-commerce",
+    "relevant_tools": [
+      "Monoshoot",
+      "Image Describer",
+      "Hypotenuse AI",
+      "AI E-Commerce Fashion",
+      "ImageN'You",
+      "NEXORA AI Commerce OS",
+      "Growati",
+      "HostCopy",
+      "NovaMind AI",
+      "TryOnAI Virtual Fitting Room"
+    ]
+  },
+  {
+    "query": "creative writing and storytelling AI",
+    "relevant_tools": [
+      "LAIKA",
+      "ittrr",
+      "Lumio",
+      "Anim Lab AI",
+      "Jenni",
+      "AI Prompt Library",
+      "Yomu",
+      "Anyword",
+      "DeepL Write",
+      "Murder.Ai - LLMs that kill, lie, decieve"
+    ]
+  },
+  {
+    "query": "AI ghostwriter for social media bios",
+    "relevant_tools": [
+      "Ghostwriter",
+      "GoGoHype",
+      "IGLink - Chrome Extension",
+      "Regent",
+      "RobinOS",
+      "Postly",
+      "Unfoldly",
+      "Street level threat Geointelligence",
+      "ClimbX",
+      "tweet.md"
+    ]
+  },
+  {
+    "query": "generate press releases automatically",
+    "relevant_tools": [
+      "1040 AI Art Models Printing Press",
+      "Ryzent AI",
+      "FeedPo",
+      "Compass Ultra",
+      "The Claude Code Daily",
+      "Demoflow",
+      "uho Dictation",
+      "SliderSpace",
+      "EmailTriager",
+      "Forkd"
+    ]
+  },
+  {
+    "query": "generate images from text prompts",
+    "relevant_tools": [
+      "Kimodo",
+      "UNO FLUX",
+      "BrickGPT-Demo",
+      "Miragic AI Image Generator",
+      "Helios 14B RealTime AOTI",
+      "PrompTessor",
+      "SGS 1",
+      "Audio Editing",
+      "FLUX TRELLIS",
+      "AniGen"
+    ]
+  },
+  {
+    "query": "AI tool for graphic design and logos",
+    "relevant_tools": [
+      "Text2Infographic",
+      "Gamma",
+      "Microsoft Designer",
+      "Seede.ai",
+      "SVGStud.io",
+      "Magic Patterns",
+      "HFBA",
+      "Ponzu",
+      "Playground AI",
+      "Vela"
+    ]
+  },
+  {
+    "query": "background remover for photos",
+    "relevant_tools": [
+      "Miragic AI Background",
+      "AI Watermark Remover",
+      "Remove Video Background",
+      "Restore Photos",
+      "PictTools",
+      "PhotoRoom",
+      "MotionShop2",
+      "Audio🔹Separator",
+      "BRIA RMBG 2.0",
+      "Hero Studio Photos"
+    ]
+  },
+  {
+    "query": "AI interior design and room decoration",
+    "relevant_tools": [
+      "Room Reinvented",
+      "Dream of Ikea",
+      "Room Cleaner",
+      "OOTDiffusion",
+      "TryOnAI Virtual Fitting Room",
+      "Gamma",
+      "Design Review",
+      "Text2Infographic",
+      "Uiverse Design",
+      "Microsoft Designer"
+    ]
+  },
+  {
+    "query": "create infographics from data automatically",
+    "relevant_tools": [
+      "Slack Data Agent",
+      "Basedash Semantic Layer",
+      "Prometheus by Firecrawl",
+      "Honen",
+      "NudgeFile",
+      "SliderSpace",
+      "Context Data",
+      "Privacy-Safe Synthetic Data Generation | Syncora AI",
+      "Agent Data Analyst",
+      "Pdf To Structured Data"
+    ]
+  },
+  {
+    "query": "upscale and enhance low-resolution images",
+    "relevant_tools": [
+      "Enhance This DemoFusion SDXL",
+      "AI Boost",
+      "AI Upscaler",
+      "Audiosr Versatile Audio Super Resolution",
+      "High Resolution FireRed Image Edit 2K",
+      "Documents Restoration",
+      "PASD Magnify",
+      "InvSR",
+      "STAR",
+      "Omni Image Editor"
+    ]
+  },
+  {
+    "query": "AI fashion and clothing design tool",
+    "relevant_tools": [
+      "Fashion Try-On",
+      "AI E-Commerce Fashion",
+      "WeShopAI Fashion Model Pose Change",
+      "AI Clothes Changer",
+      "TryOffAnyone",
+      "VELVET AI",
+      "Style Generator",
+      "BrutalCoach 2.0",
+      "WearvueAI",
+      "Gamma"
+    ]
+  },
+  {
+    "query": "generate illustrations for children books",
+    "relevant_tools": [
+      "Fiktion",
+      "Our Stories",
+      "libraryai",
+      "HostCopy",
+      "BiblioScan",
+      "Taranify",
+      "Prosed",
+      "Lumio",
+      "Ava 2.0",
+      "Relay"
+    ]
+  },
+  {
+    "query": "3D model generation from text",
+    "relevant_tools": [
+      "Sparc3D",
+      "FLUX TRELLIS",
+      "TRELLIS.2-Text-to-3D (Rerun)",
+      "AI 3D Model Generator",
+      "MIDI 3D",
+      "SORA 3D",
+      "EmbodiedGen Image To 3D",
+      "Convert 2D Images To 3D High Quality Objects",
+      "Chat With Llama3 8b",
+      "GaussianCity"
+    ]
+  },
+  {
+    "query": "color palette generator for designers",
+    "relevant_tools": [
+      "Human Generator",
+      "AI 3D Model Generator",
+      "Style Generator",
+      "Character Generator",
+      "QR Code AI Art Generator",
+      "Bedtime Story Generator",
+      "Emoji Generator",
+      "Miragic AI Image Generator",
+      "AI Poem Generator",
+      "Fake Data Generator (JSONL)"
+    ]
+  },
+  {
+    "query": "automate coding and fix bugs",
+    "relevant_tools": [
+      "Callstack.ai PR Reviewer",
+      "Tracelit",
+      "Kyro",
+      "Runtime",
+      "SiteSpeakAI",
+      "TailorTask",
+      "Zaplens",
+      "Nekton AI",
+      "Elicit",
+      "Mem"
+    ]
+  },
+  {
+    "query": "code review and debugging assistant",
+    "relevant_tools": [
+      "Multiplayer Debugging Agent",
+      "Kilo Code",
+      "CodeRabbit",
+      "ShallowCodeResearch",
+      "Mina Meeting Assistant",
+      "Design Review",
+      "gpt4all",
+      "Sketella",
+      "Open Source Ai Year In Review 2024",
+      "DeepSeek R1 Chat Assistant Web Search"
+    ]
+  },
+  {
+    "query": "generate unit tests automatically",
+    "relevant_tools": [
+      "Unit 1 Quiz - AI Agent Fundementals",
+      "Unit 2.1 smolagents Code Quiz",
+      "Crukx",
+      "Ryzent AI",
+      "TestSprite 3.0",
+      "ShallowCodeResearch",
+      "FeedPo",
+      "Demoflow",
+      "CodiumAI",
+      "SliderSpace"
+    ]
+  },
+  {
+    "query": "AI pair programmer for Python",
+    "relevant_tools": [
+      "Ghostwriter",
+      "grpyc: Fast gRPC for Python",
+      "Codeflash",
+      "marpy.io",
+      "Portia AI",
+      "Mixpanel Headless",
+      "Maia by Make",
+      "Hugging Face Diffusion Models Course",
+      "How To Learn Artificial Intelligence (AI)?",
+      "AnyFrame"
+    ]
+  },
+  {
+    "query": "convert natural language to SQL queries",
+    "relevant_tools": [
+      "AI2sql",
+      "AI Video Composer - Natural Language FFMPEG",
+      "OpenAI API",
+      "Convert to ONNX",
+      "DecisionBox for Microsoft SQL Server",
+      "FunctionGemma Physics Playground",
+      "DALL·E 2",
+      "Decagon AI",
+      "OpenAI Codex",
+      "Convert 2D Images To 3D High Quality Objects"
+    ]
+  },
+  {
+    "query": "auto-document code and write comments",
+    "relevant_tools": [
+      "Document Summarization",
+      "MinerU Document Extraction Tools",
+      "MiniAiLive ID Document Reader WebAPI Playground",
+      "Linky",
+      "AI2sql",
+      "DeepL Write",
+      "LEVERIE",
+      "Mouse1 - WebApp Auto Creator AI",
+      "Chunk sidecars",
+      "aiPDF"
+    ]
+  },
+  {
+    "query": "API integration and backend automation",
+    "relevant_tools": [
+      "Integuru",
+      "Buffer API",
+      "Powabase",
+      "Workflow Automation Softwares",
+      "AgentDock",
+      "STATICX",
+      "Browse.sh",
+      "LocIn AI",
+      "Forward",
+      "RAG-Chatbot"
+    ]
+  },
+  {
+    "query": "DevOps and infrastructure automation tool",
+    "relevant_tools": [
+      "Ohuriya AI - Ai DevOps in minutes",
+      "Hyperbrowser",
+      "AgentDock",
+      "Workflow Automation Softwares",
+      "Powabase",
+      "NEXORA AI Commerce OS",
+      "STATICX",
+      "FirmOS",
+      "Hearthlight",
+      "Freu AI"
+    ]
+  },
+  {
+    "query": "security vulnerability scanner for code",
+    "relevant_tools": [
+      "avai - you AI anti virus scanner",
+      "Scan Ninja AI",
+      "GhostCheck",
+      "Agentic Radar",
+      "Agnixa Recon 2.0",
+      "Trestle",
+      "VibeSafe",
+      "Kyro",
+      "MutahunterAI",
+      "ScanHarbor: Private Scanner"
+    ]
+  },
+  {
+    "query": "AI for database query optimization",
+    "relevant_tools": [
+      "DataPup",
+      "Table Relay",
+      "Glia",
+      "TensorZero",
+      "Loktra",
+      "VectorLens — The Vector Database GUI",
+      "LMQL",
+      "MoDev",
+      "AppLighter · Full",
+      "CVSite"
+    ]
+  },
+  {
+    "query": "SEO optimization for my website",
+    "relevant_tools": [
+      "SEO Scrubbox",
+      "Gemma Diffusion Website Builder",
+      "GeoReady",
+      "TensorZero",
+      "BrandGEO",
+      "Areza Digital",
+      "IvaBot",
+      "Duckling",
+      "GetIntel - AI Visibility Tool",
+      "AI Visibility Audit Checklist"
+    ]
+  },
+  {
+    "query": "create social media posts automatically",
+    "relevant_tools": [
+      "Playground AI",
+      "Postly",
+      "GoGoHype",
+      "Regent",
+      "Vavdio",
+      "RobinOS",
+      "Unfoldly",
+      "Street level threat Geointelligence",
+      "ClimbX",
+      "tweet.md"
+    ]
+  },
+  {
+    "query": "sales outreach and cold email automation",
+    "relevant_tools": [
+      "Mailento",
+      "ReplylessAI Sequences",
+      "SignalLEMO - Ai Outreach Made Simple",
+      "Webnity X",
+      "Rocketship",
+      "DataCloser",
+      "PitchPal",
+      "Sulsaly",
+      "Ava 2.0",
+      "Tellora"
+    ]
+  },
+  {
+    "query": "monitor social media mentions",
+    "relevant_tools": [
+      "GoGoHype",
+      "Regent",
+      "RobinOS",
+      "Postly",
+      "Unfoldly",
+      "Street level threat Geointelligence",
+      "ClimbX",
+      "tweet.md",
+      "Mashal",
+      "StoryHatch"
+    ]
+  },
+  {
+    "query": "AI for keyword research and content planning",
+    "relevant_tools": [
+      "Vavdio",
+      "Open Deep-Research",
+      "Deepseek v3-0324 Research",
+      "Llama-4-Maverick-17B Research",
+      "AI Marketing Content Generator",
+      "Vidrunner",
+      "ScouTube",
+      "Nemotron 3 Ultra by NVIDIA",
+      "Kilo Code",
+      "Agent-Sin"
+    ]
+  },
+  {
+    "query": "competitor analysis and market research",
+    "relevant_tools": [
+      "ResearchOS",
+      "Vibegrowing AI",
+      "Parano.ai",
+      "Open Deep-Research",
+      "Fred",
+      "IdeaScore.tech",
+      "Deepseek v3-0324 Research",
+      "Llama-4-Maverick-17B Research",
+      "MoneyRadar",
+      "CLI Market — Commerce APIs for AI Agents"
+    ]
+  },
+  {
+    "query": "ad copy generation for Google Ads",
+    "relevant_tools": [
+      "AI Ad Workflows",
+      "Peekads",
+      "Persuva",
+      "AdRoast - Roast your Ad before Meta does",
+      "CaseGap AI",
+      "EcomForge AI",
+      "copy.ai",
+      "Clickable",
+      "AI for Google Slides",
+      "Google Sheets Formula Generator"
+    ]
+  },
+  {
+    "query": "A/B testing content for landing pages",
+    "relevant_tools": [
+      "GoCodeo",
+      "iColoring",
+      "AI Marketing Content Generator",
+      "FlintLab Sirius Platform",
+      "Summary With AI",
+      "KryxAI",
+      "Contenda",
+      "Vibegrowing AI",
+      "First Ai Bulk Upscaling tool of its kind",
+      "Nandzz"
+    ]
+  },
+  {
+    "query": "influencer marketing campaign tool",
+    "relevant_tools": [
+      "Kflx AI",
+      "Angle",
+      "AdRoast - Roast your Ad before Meta does",
+      "Brew",
+      "Bond",
+      "EmailFlow.AI",
+      "AI Marketing Content Generator",
+      "LinkPulse",
+      "GoGoHype",
+      "Postly"
+    ]
+  },
+  {
+    "query": "generate hashtags for Instagram posts",
+    "relevant_tools": [
+      "IGLink - Chrome Extension",
+      "RobinOS",
+      "Narasi AI",
+      "Vavdio",
+      "One URL → Full Content Suite",
+      "ScouTube",
+      "Postly",
+      "Postwise",
+      "Kflx AI",
+      "Playground AI"
+    ]
+  },
+  {
+    "query": "customer support chatbot for my website",
+    "relevant_tools": [
+      "GPTHelp.ai",
+      "Dear AI",
+      "SiteSpeakAI",
+      "SiteGPT",
+      "Aidbase",
+      "Twig",
+      "Owlish",
+      "Inline Help",
+      "Renprofile",
+      "Cald.ai"
+    ]
+  },
+  {
+    "query": "AI helpdesk and ticket routing",
+    "relevant_tools": [
+      "Renprofile",
+      "INVO Ride",
+      "Novu Connect",
+      "Respan Gateway",
+      "Olyx",
+      "Dispatch Layer",
+      "Polygram Coding Agent",
+      "Tychi AI",
+      "TravelPlanner"
+    ]
+  },
+  {
+    "query": "FAQ bot builder without coding",
+    "relevant_tools": [
+      "Document.Bot - EU/ Offline AI workspace",
+      "Gemma Diffusion Website Builder",
+      "Huntr AI Resume Builder",
+      "WeWeb 3.0",
+      "Builder Brief",
+      "AI Web Scraper Builder",
+      "AI Photo Forge",
+      "Duckling",
+      "poorcoder",
+      "AI Resume Builder"
+    ]
+  },
+  {
+    "query": "live chat with AI fallback",
+    "relevant_tools": [
+      "Text AI Customer Service & Live Chat",
+      "crevo",
+      "Chat With Dolphin",
+      "Real Time Chat With AI",
+      "MiMo-Audio-Chat",
+      "Live Portrait",
+      "ACE-Chat",
+      "Chat With Janus 1.3B",
+      "SalesAgent Chat",
+      "Chat with Bitnet-b1.58-2B-4T"
+    ]
+  },
+  {
+    "query": "sentiment analysis for customer feedback",
+    "relevant_tools": [
+      "PR-Agent",
+      "GummySearch",
+      "BeyondComments",
+      "SiteSpeakAI",
+      "Dear AI",
+      "GPTHelp.ai",
+      "SiteGPT",
+      "Inline Help",
+      "Transcribe Video to Text",
+      "Twig"
+    ]
+  },
+  {
+    "query": "voice AI for inbound customer calls",
+    "relevant_tools": [
+      "Cald.ai",
+      "AICaller.io",
+      "AgentLine",
+      "Chert",
+      "Dialbotix",
+      "Bella",
+      "SiteSpeakAI",
+      "Knock Knock",
+      "Cignara",
+      "Dear AI"
+    ]
+  },
+  {
+    "query": "email triage and auto-response",
+    "relevant_tools": [
+      "TidyMail",
+      "Dispatch Layer",
+      "MCP Bridge by Appfactor",
+      "Mouse1 - WebApp Auto Creator AI",
+      "mailX by mailwarm",
+      "ChatGPT for Search Engines",
+      "SaneBox",
+      "ReplylessAI Sequences",
+      "Paper Q&A",
+      "KiTT"
+    ]
+  },
+  {
+    "query": "customer onboarding automation",
+    "relevant_tools": [
+      "SiteSpeakAI",
+      "Dear AI",
+      "GPTHelp.ai",
+      "SiteGPT",
+      "Workflow Automation Softwares",
+      "Inline Help",
+      "Twig",
+      "Aidbase",
+      "Deckly",
+      "Cald.ai"
+    ]
+  },
+  {
+    "query": "multilingual support chatbot",
+    "relevant_tools": [
+      "GPTHelp.ai",
+      "Dear AI",
+      "FLUXllama Multilingual",
+      "Multilingual Leaderboards 🌍",
+      "Chatterbox-Multilingual-TTS",
+      "RAG-Chatbot",
+      "Sensemaker",
+      "ChatBot UI With API",
+      "Llama 3- 70B Chatbot",
+      "Ghibli Multilingual Text-Rendering"
+    ]
+  },
+  {
+    "query": "AI for complaint handling and escalation",
+    "relevant_tools": [
+      "Dispatch Layer",
+      "Chert",
+      "TheLaTeXLab",
+      "AethexAI",
+      "STATICX",
+      "OrchestraML"
+    ]
+  },
+  {
+    "query": "scheduling and calendar management",
+    "relevant_tools": [
+      "RCMS® - Smart Dental Clinic Management",
+      "Truetask",
+      "Sketella",
+      "Socialsonic",
+      "Relay",
+      "Text2Calendar",
+      "Completo AI",
+      "fynk",
+      "Laviya",
+      "Riffo"
+    ]
+  },
+  {
+    "query": "data analysis and business intelligence",
+    "relevant_tools": [
+      "NC Data",
+      "ResearchOS",
+      "Excelmatic",
+      "Miragic Sales Pilot",
+      "Slack Data Agent",
+      "Basedash Semantic Layer",
+      "Veltrix AI",
+      "Databox MCP",
+      "Mapquery.ai",
+      "Basedash: Embedded Analytics"
+    ]
+  },
+  {
+    "query": "summarize long documents and PDFs",
+    "relevant_tools": [
+      "Smmry",
+      "Summary With AI",
+      "Documents Restoration",
+      "YouTube Summary with ChatGPT",
+      "SciSpace",
+      "PDFParsersPlayground",
+      "StreamingT2V",
+      "Mistral OCR 3",
+      "Searchly",
+      "Clipwing"
+    ]
+  },
+  {
+    "query": "meeting notes and action items from recording",
+    "relevant_tools": [
+      "Cogram",
+      "Otter.ai",
+      "Loopin AI",
+      "audien.to",
+      "SYSTMS Action",
+      "Mina Meeting Assistant",
+      "MeetGeek",
+      "Sybill",
+      "EKHOS AI",
+      "Hyperbrowser"
+    ]
+  },
+  {
+    "query": "AI executive assistant for inbox management",
+    "relevant_tools": [
+      "KiTT",
+      "Slashy",
+      "DeepSeek R1 Chat Assistant Web Search",
+      "Completo AI",
+      "AnchorVine",
+      "Reading Inbox Synthesizer",
+      "Ghost Assistant",
+      "fynk",
+      "Laviya",
+      "Kim Personal Health Assistant"
+    ]
+  },
+  {
+    "query": "workflow automation without coding",
+    "relevant_tools": [
+      "Workflow Automation Softwares",
+      "ReBillion.ai",
+      "poorcoder",
+      "Maia by Make",
+      "Shotstack Workflows",
+      "Taskade",
+      "Powabase",
+      "Freu AI",
+      "ReplylessAI Sequences",
+      "AgentDock"
+    ]
+  },
+  {
+    "query": "project management AI assistant",
+    "relevant_tools": [
+      "Completo AI",
+      "Manus Scheduled Tasks 2.0",
+      "Pipedock.io",
+      "Truetask",
+      "IDKit - FaceOnLive Community Project",
+      "Sklm",
+      "DeepSeek R1 Chat Assistant Web Search",
+      "AnchorVine",
+      "Ghost Assistant",
+      "fynk"
+    ]
+  },
+  {
+    "query": "AI for financial forecasting and budgeting",
+    "relevant_tools": [
+      "MardRisk 1.1",
+      "GIFT Eval",
+      "FinAdvisor",
+      "Miragic Sales Pilot",
+      "Financial Data API",
+      "Career Break Planner by Planwell",
+      "FounderOS",
+      "Meet Warren 3.0",
+      "Mashal",
+      "Gateplex"
+    ]
+  },
+  {
+    "query": "contract review and legal document analysis",
+    "relevant_tools": [
+      "AskMurdock",
+      "ReGuardian",
+      "NC Data",
+      "Document Summarization",
+      "CaseGap AI",
+      "MinerU Document Extraction Tools",
+      "Cleo Atlas Legal API",
+      "MiniAiLive ID Document Reader WebAPI Playground",
+      "HOA Dispute Shield",
+      "fynk"
+    ]
+  },
+  {
+    "query": "knowledge base and internal wiki builder",
+    "relevant_tools": [
+      "LLM Wiki cc",
+      "Gemma Diffusion Website Builder",
+      "Renprofile",
+      "Huntr AI Resume Builder",
+      "WeWeb 3.0",
+      "Builder Brief",
+      "AI Web Scraper Builder",
+      "Galactica",
+      "Duckling",
+      "Vaaad AI"
+    ]
+  },
+  {
+    "query": "HR recruiting and candidate screening",
+    "relevant_tools": [
+      "CrustRecruiter",
+      "UnBullet",
+      "Adon AI",
+      "NC Data",
+      "Rifair AI",
+      "Ghost Assistant",
+      "Agentic Swarm Marketplace",
+      "Searchlight",
+      "TypeDock",
+      "Consultant ROI Toolkit - AI Prompts"
+    ]
+  },
+  {
+    "query": "AI resume screener and ranking",
+    "relevant_tools": [
+      "Huntr AI Resume Builder",
+      "Agent Leaderboard",
+      "Roast My Resume",
+      "AI Resume Builder",
+      "Resume Interview",
+      "ResumeWriting.com",
+      "ResumeDive",
+      "JobFit AI",
+      "Projects2Jobs AI",
+      "Sandflare"
+    ]
+  },
+  {
+    "query": "generate job descriptions automatically",
+    "relevant_tools": [
+      "Trackply",
+      "Growati",
+      "Job Postings API",
+      "HostCopy",
+      "Ryzent AI",
+      "IceSume",
+      "MusicLM",
+      "ImprovedCV: Optimize your CV for any job",
+      "Hypotenuse AI",
+      "FeedPo"
+    ]
+  },
+  {
+    "query": "employee onboarding automation",
+    "relevant_tools": [
+      "Workflow Automation Softwares",
+      "FirmOS",
+      "Hearthlight",
+      "Honen",
+      "Freu AI",
+      "ReBillion.ai",
+      "Adon AI",
+      "Triggered Agents by Adaptive",
+      "Shotstack Workflows",
+      "FlowAudit"
+    ]
+  },
+  {
+    "query": "performance review assistant",
+    "relevant_tools": [
+      "Sketella",
+      "Open Source Ai Year In Review 2024",
+      "YOLO ARENA",
+      "DeepSeek R1 Chat Assistant Web Search",
+      "Yi Coder 9B",
+      "Ghost Assistant",
+      "Kim Personal Health Assistant",
+      "Design Review",
+      "Callstack.ai PR Reviewer",
+      "Mina Meeting Assistant"
+    ]
+  },
+  {
+    "query": "team scheduling and shift planning",
+    "relevant_tools": [
+      "Socialsonic",
+      "Kilo Code",
+      "Globe Thrivers Beta",
+      "softly",
+      "MindPal",
+      "OnPlan",
+      "Clinit",
+      "ZyloQuest",
+      "Taskade",
+      "Angle"
+    ]
+  },
+  {
+    "query": "AI for employee engagement surveys",
+    "relevant_tools": [
+      "Rephrase AI",
+      "ClimbX",
+      "Honen",
+      "Fireply AI 2.0",
+      "ZyloQuest",
+      "Tenure",
+      "LikePulse",
+      "Knock agent for Slack",
+      "Beagle - AI sidekick for agencies"
+    ]
+  },
+  {
+    "query": "learning and development course generator",
+    "relevant_tools": [
+      "Andrew Ng’s Machine Learning at Stanford University",
+      "Remusic",
+      "Hugging Face Diffusion Models Course",
+      "AI and Machine Learning Roadmaps",
+      "coursera-deep-learning-specialization",
+      "Geoffrey Hinton’s Neural Networks For Machine Learning",
+      "Sebastian Thrun’s Introduction To Machine Learning",
+      "Unit4 Final Certificate",
+      "Human Generator",
+      "AI 3D Model Generator"
+    ]
+  },
+  {
+    "query": "salary benchmarking tool",
+    "relevant_tools": [
+      "Stick To Your Role! Leaderboard",
+      "I am speed."
+    ]
+  },
+  {
+    "query": "AI reference check automation",
+    "relevant_tools": [
+      "ClaimReady — Claim Submission Check",
+      "InstantIR",
+      "Workflow Automation Softwares",
+      "OmniConsistency",
+      "MangaNinja Demo",
+      "Follow the Mean (FLUX.2)",
+      "Cosmos",
+      "FirmOS",
+      "Hearthlight",
+      "Freu AI"
+    ]
+  },
+  {
+    "query": "translate text between languages",
+    "relevant_tools": [
+      "Canary 1b V2",
+      "Emoji Generator",
+      "PaddleOCR",
+      "ScouTube",
+      "Transcribe Video to Text",
+      "QACAT",
+      "OutofLipSync",
+      "Reader Alive",
+      "ColibotAI",
+      "Agata"
+    ]
+  },
+  {
+    "query": "AI language learning tutor",
+    "relevant_tools": [
+      "Koji by Brilliant",
+      "Mathos AI",
+      "AI and Machine Learning Roadmaps",
+      "coursera-deep-learning-specialization",
+      "SpeakLearn",
+      "Geoffrey Hinton’s Neural Networks For Machine Learning",
+      "Andrew Ng’s Machine Learning at Stanford University",
+      "Sebastian Thrun’s Introduction To Machine Learning",
+      "Roadmap",
+      "CastReader — AI Explain"
+    ]
+  },
+  {
+    "query": "real-time speech translation",
+    "relevant_tools": [
+      "Nemotron Speech Streaming",
+      "WellSaid",
+      "EKHOS AI",
+      "Voxtral Realtime WebGPU",
+      "IndicTrans3 - Next-Gen Indic Language Translation",
+      "Overline",
+      "Real Time Chat With AI",
+      "Real Time Stock Predictor",
+      "Real-Time Text-to-Image SDXL Lightning",
+      "D-Fine - SOTA Real-Time Object Detector"
+    ]
+  },
+  {
+    "query": "localize website content for multiple markets",
+    "relevant_tools": [
+      "Headlinesai.pro",
+      "Gemma Diffusion Website Builder",
+      "Duckling",
+      "SimSwarm",
+      "Prismiq",
+      "ConvertForge AI",
+      "AI Marketing Content Generator",
+      "PaddleOCR",
+      "Demo Playground",
+      "AI-Flow"
+    ]
+  },
+  {
+    "query": "transcribe and translate meetings",
+    "relevant_tools": [
+      "Canary 1b V2",
+      "Cohere Transcribe WebGPU",
+      "Loopin AI",
+      "Transcribe Video to Text",
+      "OutofLipSync",
+      "Caddie",
+      "Emoji Generator",
+      "EKHOS AI",
+      "Parakeet TDT 0.6b V3",
+      "Sun"
+    ]
+  },
+  {
+    "query": "create presentations and slide decks",
+    "relevant_tools": [
+      "SlidesWizard",
+      "Gamma",
+      "Playground AI",
+      "Lumo Studios",
+      "LifeReel",
+      "ScribleSketch",
+      "Chartbuilder",
+      "StableSounds.ai",
+      "Pitch Agent",
+      "VectorArt.ai"
+    ]
+  },
+  {
+    "query": "AI for creating pitch decks for startups",
+    "relevant_tools": [
+      "Pitch Agent",
+      "VC Boom",
+      "Based AI",
+      "RunDiffusion",
+      "DreamStudio",
+      "Patience.ai",
+      "Songbrain",
+      "GauGAN2",
+      "Trolly.ai",
+      "Tellora"
+    ]
+  },
+  {
+    "query": "generate executive summary from report",
+    "relevant_tools": [
+      "Summary With AI",
+      "YouTube Summary with ChatGPT",
+      "QACAT",
+      "The Interactive Radiology Report",
+      "Summara",
+      "Doc To Dialogue",
+      "KiTT",
+      "CommitLens",
+      "MedGemma - Radiology Explainer Demo",
+      "Greater Than Services"
+    ]
+  },
+  {
+    "query": "document comparison and diff tool",
+    "relevant_tools": [
+      "Image2SFX Comparison",
+      "Document Summarization",
+      "MinerU Document Extraction Tools",
+      "PawMatchAI",
+      "PSHuman",
+      "MiniAiLive ID Document Reader WebAPI Playground",
+      "DimensionX",
+      "RB Modulation",
+      "aiPDF",
+      "Documents Restoration"
+    ]
+  },
+  {
+    "query": "convert PDF to editable Word document",
+    "relevant_tools": [
+      "Summary With AI",
+      "Convert to ONNX",
+      "idmly",
+      "Document.Bot - EU/ Offline AI workspace",
+      "Document Summarization",
+      "MinerU Document Extraction Tools",
+      "GPTLocalhost",
+      "Convert 2D Images To 3D High Quality Objects",
+      "MiniAiLive ID Document Reader WebAPI Playground",
+      "Pdf To Structured Data"
+    ]
+  },
+  {
+    "query": "web scraping and data extraction AI",
+    "relevant_tools": [
+      "MinerU Document Extraction Tools",
+      "ClearerVoice-Studio (Speech Enhancement, Separation and Extraction)",
+      "NC Data",
+      "Spidra",
+      "TIGER Audio Extractor",
+      "CatchAll by NewsCatcher",
+      "Prometheus by Firecrawl",
+      "OpenAdapter - Search, Scrape & Vector DB",
+      "Awesome AI Web Search",
+      "Web Search MCP"
+    ]
+  },
+  {
+    "query": "AI research assistant for literature review",
+    "relevant_tools": [
+      "Elicit",
+      "ShallowCodeResearch",
+      "Open Deep-Research",
+      "Galactica",
+      "Deepseek v3-0324 Research",
+      "Llama-4-Maverick-17B Research",
+      "Sketella",
+      "Open Source Ai Year In Review 2024",
+      "DeepSeek R1 Chat Assistant Web Search",
+      "Ghost Assistant"
+    ]
+  },
+  {
+    "query": "survey analysis and insights generation",
+    "relevant_tools": [
+      "Excelmatic",
+      "Insights by Omnia",
+      "Agnixa Recon 2.0",
+      "LabelLens",
+      "Checkmarx Next Generation SAST",
+      "Cosmic Insights",
+      "ThoughtsOrganizer",
+      "Smmry",
+      "Rifair AI",
+      "klingai"
+    ]
+  },
+  {
+    "query": "AI for market trend analysis",
+    "relevant_tools": [
+      "ResearchOS",
+      "IdeaScore.tech",
+      "MoneyRadar",
+      "CLI Market — Commerce APIs for AI Agents",
+      "MardRisk 1.1",
+      "Mapquery.ai",
+      "GEMFINITY",
+      "Flip Flow",
+      "Miragic Sales Pilot",
+      "PR-Agent"
+    ]
+  },
+  {
+    "query": "automated reporting from spreadsheets",
+    "relevant_tools": [
+      "Agnixa Recon 2.0",
+      "Laviya",
+      "ezJobs",
+      "Deepseek Multimodal",
+      "PR-Agent",
+      "VibeCheck",
+      "Callstack.ai PR Reviewer",
+      "Tubeup",
+      "PhotoCall",
+      "Clientence"
+    ]
+  },
+  {
+    "query": "AI for personal finance and budgeting",
+    "relevant_tools": [
+      "Moneyball",
+      "Cently",
+      "Meet Warren 3.0",
+      "ForwardLens",
+      "Kim Personal Health Assistant",
+      "Elephas",
+      "Factual — your personal news app",
+      "Veltrix AI",
+      "Spendia",
+      "DATAPIQ"
+    ]
+  },
+  {
+    "query": "AI recipe generator and meal planner",
+    "relevant_tools": [
+      "AI Travel Planner",
+      "Mealify 2.0",
+      "Cirqly Event Planner",
+      "Career Break Planner by Planwell",
+      "Human Generator",
+      "AI 3D Model Generator",
+      "Style Generator",
+      "Character Generator",
+      "QR Code AI Art Generator",
+      "Bedtime Story Generator"
+    ]
+  },
+  {
+    "query": "generate business plan from idea",
+    "relevant_tools": [
+      "AbsolutelyBomb - Got a daring idea?",
+      "Helix",
+      "Sing an idea ➡️ Music",
+      "soto",
+      "Inuvi",
+      "AnchorVine",
+      "Stride",
+      "CaseGap AI",
+      "Deep Work Plan",
+      "LLM Agent from an Image"
+    ]
+  },
+  {
+    "query": "AI for real estate property valuation",
+    "relevant_tools": [
+      "ReBillion.ai",
+      "Reeloft",
+      "Listomatic",
+      "GEMFINITY",
+      "CamLabs.ai",
+      "CirclFi",
+      "Abodex Space",
+      "Real Time Chat With AI",
+      "Real Time Stock Predictor",
+      "Leni"
+    ]
+  },
+  {
+    "query": "no-code app builder with AI",
+    "relevant_tools": [
+      "WeWeb 3.0",
+      "AI Web Scraper Builder",
+      "Magic Patterns",
+      "AI Resume Builder",
+      "Gemma Diffusion Website Builder",
+      "Huntr AI Resume Builder",
+      "Maia by Make",
+      "Builder Brief",
+      "Duckling",
+      "Thinnest AI"
+    ]
+  },
+  {
+    "query": "AI medical diagnosis assistant",
+    "relevant_tools": [
+      "The Interactive Radiology Report",
+      "Autonomous Oncology Board",
+      "KeptWell",
+      "AI Care Companion",
+      "Keypup Gen AI",
+      "DeepSeek R1 Chat Assistant Web Search",
+      "Juno",
+      "Ghost Assistant",
+      "Kim Personal Health Assistant",
+      "Mina Meeting Assistant"
+    ]
+  },
+  {
+    "query": "mental health chatbot and therapy support",
+    "relevant_tools": [
+      "GPTHelp.ai",
+      "Dear AI",
+      "Hayley: Your Thinking Companion",
+      "RAG-Chatbot",
+      "ChatBot UI With API",
+      "Neulish",
+      "Llama 3- 70B Chatbot",
+      "Chatbot UI",
+      "MOUSE-Visual AI Chatbot",
+      "DecisionsMatter.ai- Decisions Assistant"
+    ]
+  },
+  {
+    "query": "drug interaction checker with AI",
+    "relevant_tools": [
+      "Visual Usability Checker",
+      "DiscloseKit Checker",
+      "VOID",
+      "Openstatus MCP Health Checker",
+      "Sumbios O",
+      "AI Care Companion",
+      "Sun",
+      "Feezza",
+      "Humanonn",
+      "Zeon Games"
+    ]
+  },
+  {
+    "query": "AI for clinical note taking",
+    "relevant_tools": [
+      "Obotiq",
+      "BrainFlow",
+      "Agentic Diaries",
+      "Patien",
+      "Followo",
+      "GhostSnap",
+      "Feezza",
+      "Tamadoggo",
+      "Creatoor AI: Text your AI clone",
+      "OpenCairn"
+    ]
+  },
+  {
+    "query": "patient symptom checker tool",
+    "relevant_tools": [
+      "Visual Usability Checker",
+      "DiscloseKit Checker",
+      "Openstatus MCP Health Checker",
+      "Juno",
+      "AI Care Companion",
+      "Patien",
+      "Kakunin",
+      "RCMS® - Smart Dental Clinic Management"
+    ]
+  },
+  {
+    "query": "AI nutrition and diet planning",
+    "relevant_tools": [
+      "LabelLens",
+      "HivRa",
+      "Fiku App",
+      "NuraXe",
+      "Adaptive TDEE Calculator",
+      "Kilo Code",
+      "Globe Thrivers Beta",
+      "Angle",
+      "Yemake",
+      "Mealify 2.0"
+    ]
+  },
+  {
+    "query": "fitness coaching and workout planner AI",
+    "relevant_tools": [
+      "NuraXe",
+      "AI Travel Planner",
+      "Trainer Gym AI",
+      "HivRa",
+      "Whistle",
+      "Cirqly Event Planner",
+      "Career Break Planner by Planwell",
+      "PitchPal",
+      "Thorax",
+      "TrakMac"
+    ]
+  },
+  {
+    "query": "AI for medical image analysis",
+    "relevant_tools": [
+      "Autonomous Oncology Board",
+      "The Interactive Radiology Report",
+      "KeptWell",
+      "Miragic Sales Pilot",
+      "Omni Image Editor",
+      "Qwen-Image Multi-Image-Composition",
+      "Z-Image Turbo + LORA",
+      "Image Arena Leaderboard",
+      "Image To Vector",
+      "Instant Image"
+    ]
+  },
+  {
+    "query": "telemedicine and remote patient monitoring",
+    "relevant_tools": [
+      "RemoteX",
+      "Parental Control",
+      "VectorLens — The Vector Database GUI",
+      "Juno",
+      "Adrian",
+      "NC Data",
+      "PandaProbe Cloud",
+      "Patien",
+      "Kakunin",
+      "RCMS® - Smart Dental Clinic Management"
+    ]
+  },
+  {
+    "query": "AI for hospital operations and scheduling",
+    "relevant_tools": [
+      "Socialsonic",
+      "Pagerly",
+      "Onpilot",
+      "QuantisticAI",
+      "NEXORA AI Commerce OS",
+      "Clinit",
+      "RemoteX",
+      "Thinnest AI",
+      "Crawlable",
+      "RCMS® - Smart Dental Clinic Management"
+    ]
+  },
+  {
+    "query": "AI tutor for math and science",
+    "relevant_tools": [
+      "Mathos AI",
+      "Galactica",
+      "Lium AI",
+      "SpeakLearn",
+      "Fathom R1 14B",
+      "Anim Lab AI",
+      "AlgoSpace",
+      "Koji by Brilliant",
+      "CastReader — AI Explain",
+      "Thorax"
+    ]
+  },
+  {
+    "query": "generate quiz and exam questions automatically",
+    "relevant_tools": [
+      "AutoQuizzer",
+      "Unit 2.1 smolagents Code Quiz",
+      "Unit 1 Quiz - AI Agent Fundementals",
+      "FENNTALE   Quiz",
+      "Ryzent AI",
+      "FeedPo",
+      "Play2Practice",
+      "ClimateQ&A",
+      "PicQ",
+      "Demoflow"
+    ]
+  },
+  {
+    "query": "AI for language pronunciation practice",
+    "relevant_tools": [
+      "VibeLing 2.0",
+      "SpeakLearn",
+      "Copycat Cafe",
+      "NAADI",
+      "AI and Machine Learning Roadmaps",
+      "IndicTrans3 - Next-Gen Indic Language Translation",
+      "PitchPal",
+      "AI Video Composer - Natural Language FFMPEG",
+      "LMQL",
+      "AI Interview Trainer"
+    ]
+  },
+  {
+    "query": "personalized learning path generator",
+    "relevant_tools": [
+      "Remusic",
+      "Thinka IA",
+      "AI and Machine Learning Roadmaps",
+      "coursera-deep-learning-specialization",
+      "Geoffrey Hinton’s Neural Networks For Machine Learning",
+      "ZunoScroll",
+      "Andrew Ng’s Machine Learning at Stanford University",
+      "Sebastian Thrun’s Introduction To Machine Learning",
+      "Human Generator",
+      "AI 3D Model Generator"
+    ]
+  },
+  {
+    "query": "AI essay grader for teachers",
+    "relevant_tools": [
+      "Distilling 100B+ Models 40x Faster with TRL",
+      "Thinka IA"
+    ]
+  },
+  {
+    "query": "create online course content with AI",
+    "relevant_tools": [
+      "Hugging Face Diffusion Models Course",
+      "Zingle",
+      "Contenda",
+      "Playground AI",
+      "Jasper",
+      "Search Your Face Online",
+      "Rytr",
+      "Unit4 Final Certificate",
+      "PP-OCRv5 Online Demo",
+      "CurioVerse"
+    ]
+  },
+  {
+    "query": "AI flashcard generator from notes",
+    "relevant_tools": [
+      "Human Generator",
+      "AI 3D Model Generator",
+      "Style Generator",
+      "Character Generator",
+      "QR Code AI Art Generator",
+      "Bedtime Story Generator",
+      "Emoji Generator",
+      "Miragic AI Image Generator",
+      "AI Poem Generator",
+      "Fake Data Generator (JSONL)"
+    ]
+  },
+  {
+    "query": "coding tutor for beginners",
+    "relevant_tools": [
+      "Mathos AI",
+      "SpeakLearn",
+      "How To Learn Artificial Intelligence (AI)?",
+      "Boxes.dev",
+      "Polygram Coding Agent",
+      "Koji by Brilliant",
+      "CastReader — AI Explain",
+      "Pi Coding Agent",
+      "Coding Capybaras",
+      "StarCoder2"
+    ]
+  },
+  {
+    "query": "AI for special education and accessibility",
+    "relevant_tools": [
+      "Accessibility AI App",
+      "CodeQuizz",
+      "Starchild-1 by Odyssey",
+      "StudySong",
+      "BotLearn",
+      "metiers.ai",
+      "Design Review",
+      "FENNTALE   Quiz",
+      "Honen",
+      "thita.ai"
+    ]
+  },
+  {
+    "query": "generate lesson plans automatically",
+    "relevant_tools": [
+      "Ryzent AI",
+      "FeedPo",
+      "Mealify 2.0",
+      "Demoflow",
+      "SliderSpace",
+      "Tabical",
+      "vMira",
+      "EmailTriager",
+      "Forkd",
+      "Hour One"
+    ]
+  },
+  {
+    "query": "AI for data cleaning and preprocessing",
+    "relevant_tools": [
+      "Image processing & OCR Comparator",
+      "ChatPilot",
+      "Context Data",
+      "Privacy-Safe Synthetic Data Generation | Syncora AI",
+      "Agent Data Analyst",
+      "Pdf To Structured Data",
+      "Financial Data API",
+      "Fake Data Generator (JSONL)",
+      "Slack Data Agent",
+      "NC Data"
+    ]
+  },
+  {
+    "query": "automate machine learning model training",
+    "relevant_tools": [
+      "AI and Machine Learning Roadmaps",
+      "Andrew Ng’s Machine Learning at Stanford University",
+      "Sebastian Thrun’s Introduction To Machine Learning",
+      "Roadmap",
+      "Geoffrey Hinton’s Neural Networks For Machine Learning",
+      "How To Learn Artificial Intelligence (AI)?",
+      "WellSaid Labs",
+      "The Smol Training Playbook",
+      "coursera-deep-learning-specialization",
+      "tensorflow"
+    ]
+  },
+  {
+    "query": "AI for time series forecasting",
+    "relevant_tools": [
+      "GIFT Eval",
+      "Miragic Sales Pilot",
+      "Girlslike Lora Gallery",
+      "Gemini 3.5 Flash",
+      "MardRisk 1.1",
+      "Real Time Chat With AI",
+      "Real Time Stock Predictor",
+      "Real-Time Text-to-Image SDXL Lightning",
+      "D-Fine - SOTA Real-Time Object Detector",
+      "ByStory"
+    ]
+  },
+  {
+    "query": "anomaly detection in datasets",
+    "relevant_tools": [
+      "Vectorsearch Hub Datasets",
+      "Video Object Detection",
+      "YOLOv9 Object Detection w/ Transformers.js",
+      "Token saver",
+      "Yolov13",
+      "Infinite Dataset Hub",
+      "Yolo11",
+      "PawMatchAI",
+      "VisionScout",
+      "Yolov9"
+    ]
+  },
+  {
+    "query": "AI feature engineering assistant",
+    "relevant_tools": [
+      "VDA",
+      "Compass Ultra",
+      "InferenceSupport",
+      "KEEP [docker]",
+      "DeepSeek R1 Chat Assistant Web Search",
+      "BobCA",
+      "TextoCAD",
+      "Ghost Assistant",
+      "Kim Personal Health Assistant",
+      "Devin Desktop"
+    ]
+  },
+  {
+    "query": "explain machine learning model predictions",
+    "relevant_tools": [
+      "AI and Machine Learning Roadmaps",
+      "Andrew Ng’s Machine Learning at Stanford University",
+      "Sebastian Thrun’s Introduction To Machine Learning",
+      "Roadmap",
+      "Geoffrey Hinton’s Neural Networks For Machine Learning",
+      "How To Learn Artificial Intelligence (AI)?",
+      "CastReader — AI Explain",
+      "coursera-deep-learning-specialization",
+      "tensorflow",
+      "AstroVoice API"
+    ]
+  },
+  {
+    "query": "AI for A/B test analysis",
+    "relevant_tools": [
+      "Drizz",
+      "Keploy",
+      "Langfa.st",
+      "OpenAPI Spec Analyzer",
+      "Unit 1 Quiz - AI Agent Fundementals",
+      "Miragic Sales Pilot",
+      "Opik",
+      "FlintLab Sirius Platform",
+      "This Image Does Not Exist",
+      "PR-Agent"
+    ]
+  },
+  {
+    "query": "automated data visualization from CSV",
+    "relevant_tools": [
+      "Chartbuilder",
+      "Houndsight.ai",
+      "Excelmatic",
+      "Bioclip Demo",
+      "BankStatementLab",
+      "ezJobs",
+      "Deepseek Multimodal",
+      "Spidra",
+      "AICaller.io",
+      "ONYRI Sanitize"
+    ]
+  },
+  {
+    "query": "AI for ETL pipeline automation",
+    "relevant_tools": [
+      "Context Data",
+      "Workflow Automation Softwares",
+      "FirmOS",
+      "Drizz",
+      "Hearthlight",
+      "Freu AI",
+      "ReBillion.ai",
+      "Adon AI",
+      "Triggered Agents by Adaptive",
+      "Shotstack Workflows"
+    ]
+  },
+  {
+    "query": "natural language interface for databases",
+    "relevant_tools": [
+      "AI Video Composer - Natural Language FFMPEG",
+      "OpenAI API",
+      "FunctionGemma Physics Playground",
+      "DALL·E 2",
+      "OpenAI Codex",
+      "Orchestria",
+      "freddy.",
+      "VectorLens — The Vector Database GUI",
+      "Based AI",
+      "DreamStudio"
+    ]
+  },
+  {
+    "query": "AI product recommendation engine",
+    "relevant_tools": [
+      "Netflix Recommendation",
+      "Phind",
+      "Consensus",
+      "Kazimir.ai",
+      "Komo AI",
+      "Plandex",
+      "WearvueAI",
+      "AI Product Adoption Deck",
+      "Monoshoot",
+      "MemFree"
+    ]
+  },
+  {
+    "query": "dynamic pricing tool for online store",
+    "relevant_tools": [
+      "Search Your Face Online",
+      "Pricing Roaster",
+      "StreamingT2V",
+      "PP-OCRv5 Online Demo",
+      "Fast Shop",
+      "Fieldpaid",
+      "Skillmarkdown",
+      "Tryon",
+      "Hoursmith",
+      "Zingle"
+    ]
+  },
+  {
+    "query": "AI for inventory management",
+    "relevant_tools": [
+      "NovaMind AI",
+      "Completo AI",
+      "fynk",
+      "Laviya",
+      "RCMS® - Smart Dental Clinic Management",
+      "Riffo",
+      "Truetask",
+      "Google Antigravity 2.0",
+      "Superlist MCP",
+      "Manus Scheduled Tasks 2.0"
+    ]
+  },
+  {
+    "query": "generate product titles and SEO descriptions",
+    "relevant_tools": [
+      "Growati",
+      "Tubeup",
+      "Image Describer",
+      "Hypotenuse AI",
+      "CLICKABOOM",
+      "GetIntel - AI Visibility Tool",
+      "SEO Scrubbox",
+      "GeoReady",
+      "HostCopy",
+      "Areza Digital"
+    ]
+  },
+  {
+    "query": "AI chatbot for Shopify store",
+    "relevant_tools": [
+      "Fast Shop",
+      "RAG-Chatbot",
+      "ChatBot UI With API",
+      "Llama 3- 70B Chatbot",
+      "Chatbot UI",
+      "MOUSE-Visual AI Chatbot",
+      "Guardrails Arena",
+      "DecisionsMatter.ai- Decisions Assistant",
+      "GOSH",
+      "Llama 3.2 WebGPU"
+    ]
+  },
+  {
+    "query": "visual search for fashion e-commerce",
+    "relevant_tools": [
+      "AI E-Commerce Fashion",
+      "Tryon",
+      "WeShopAI Fashion Model Pose Change",
+      "Fashion Try-On",
+      "NEXORA AI Commerce OS",
+      "SEO Scrubbox",
+      "ColPali 🤝 Vespa - Visual Retrieval",
+      "CLI Market — Commerce APIs for AI Agents",
+      "MOUSE-Visual AI Chatbot",
+      "Monoshoot"
+    ]
+  },
+  {
+    "query": "AI for returns and refund automation",
+    "relevant_tools": [
+      "Workflow Automation Softwares",
+      "FirmOS",
+      "Hearthlight",
+      "Freu AI",
+      "ReBillion.ai",
+      "Adon AI",
+      "Triggered Agents by Adaptive",
+      "Shotstack Workflows",
+      "Hyperbrowser",
+      "Taskade"
+    ]
+  },
+  {
+    "query": "customer lifetime value prediction",
+    "relevant_tools": [
+      "Prediction Guard",
+      "SHARP - 3D Gaussian Scene Prediction from Apple",
+      "SiteSpeakAI",
+      "Dear AI",
+      "GPTHelp.ai",
+      "SiteGPT",
+      "Inline Help",
+      "Twig",
+      "Aidbase",
+      "Deckly"
+    ]
+  },
+  {
+    "query": "AI for abandoned cart recovery",
+    "relevant_tools": [
+      "TradeVulcan",
+      "freddy.",
+      "TryOnAI Virtual Fitting Room",
+      "EasyAgents",
+      "Whistle",
+      "CLI Market — Commerce APIs for AI Agents"
+    ]
+  },
+  {
+    "query": "review analysis and response automation",
+    "relevant_tools": [
+      "AskMurdock",
+      "Workflow Automation Softwares",
+      "QACAT",
+      "HOA Dispute Shield",
+      "Open Source Ai Year In Review 2024",
+      "ChatGPT for Search Engines",
+      "FirmOS",
+      "Hearthlight",
+      "Freu AI",
+      "ReBillion.ai"
+    ]
+  },
+  {
+    "query": "AI music composition from scratch",
+    "relevant_tools": [
+      "Qwen-Image Multi-Image-Composition",
+      "Ecrett Music",
+      "Remusic",
+      "RWKV Music",
+      "Video to Music",
+      "Riffusion • Spectrogram To Music",
+      "Image to Music v2",
+      "Music Arena Leaderboard",
+      "AI Music Generator",
+      "CommonCanvas Demo"
+    ]
+  },
+  {
+    "query": "stem separation and audio isolation",
+    "relevant_tools": [
+      "TIGER Audio Extractor",
+      "ClearerVoice-Studio (Speech Enhancement, Separation and Extraction)",
+      "VocalReplica",
+      "VibeOpenClaw",
+      "Orchestria",
+      "Audio🔹Separator",
+      "Audio SR",
+      "MiMo-Audio-Chat",
+      "SALMONN Audio Questioning",
+      "Stable Audio 3"
+    ]
+  },
+  {
+    "query": "AI mastering and mixing tool",
+    "relevant_tools": [
+      "Serumo"
+    ]
+  },
+  {
+    "query": "generate sound effects from text",
+    "relevant_tools": [
+      "Sound AI SFX",
+      "StableSounds.ai",
+      "Kimodo",
+      "DeepseekJanusPro",
+      "Video SoundFX",
+      "Play.ht",
+      "UNO FLUX",
+      "Vela",
+      "BrickGPT-Demo",
+      "CANVAS-o3"
+    ]
+  },
+  {
+    "query": "AI DJ and playlist curator",
+    "relevant_tools": [
+      "AudienceCue",
+      "uMood",
+      "Web Clipper for NotebookLM"
+    ]
+  },
+  {
+    "query": "voice enhancement and noise removal",
+    "relevant_tools": [
+      "ClearerVoice-Studio (Speech Enhancement, Separation and Extraction)",
+      "Text Behind Image",
+      "Stable Diffusion 3 Medium Superpompt",
+      "MOGE",
+      "imgmend",
+      "Veritone Voice",
+      "Vibe Voice Custom Voices",
+      "MegaTTS 3 Voice Cloning",
+      "Voice Clone AI Podcast",
+      "Voice Cloning Studio"
+    ]
+  },
+  {
+    "query": "AI for podcast editing and cleanup",
+    "relevant_tools": [
+      "Airbrush Studio",
+      "Voice Clone AI Podcast",
+      "Daily Paper Podcast",
+      "podcast.ai",
+      "Podcastify",
+      "Audio Editing",
+      "Edit Video By Editing Text",
+      "OmniAvatar",
+      "Recast Studio",
+      "Small Talk"
+    ]
+  },
+  {
+    "query": "MIDI generation from humming",
+    "relevant_tools": [
+      "MIDI 3D",
+      "Advanced MIDI Renderer",
+      "ByteDance Solo Piano Audio To MIDI Transcription",
+      "RWKV Music",
+      "klingai",
+      "Video Generation Leaderboard",
+      "Di♪♪Rhythm",
+      "Loudly",
+      "RunwayML",
+      "Boomy"
+    ]
+  },
+  {
+    "query": "AI lyric writing assistant",
+    "relevant_tools": [
+      "Yomu",
+      "Jenni",
+      "Anyword",
+      "Rytr",
+      "Lavender",
+      "Elephas",
+      "Typeahead",
+      "ittrr",
+      "DeepL Write",
+      "FDM AI Writer"
+    ]
+  },
+  {
+    "query": "audio transcription with speaker diarization",
+    "relevant_tools": [
+      "ByteDance Solo Piano Audio To MIDI Transcription",
+      "Voxtral WebGPU",
+      "Tyto by ai-coustics",
+      "EKHOS AI",
+      "Descript Overdub",
+      "Edit Video By Editing Text",
+      "Echo-TTS Preview",
+      "Transcribe Video to Text",
+      "Voxtral Realtime WebGPU",
+      "Audio🔹Separator"
+    ]
+  },
+  {
+    "query": "AI contract drafting and review",
+    "relevant_tools": [
+      "fynk",
+      "Open Source Ai Year In Review 2024",
+      "Design Review",
+      "ReGuardian",
+      "TrustCart",
+      "Agentic Swarm Marketplace",
+      "CodeRabbit",
+      "Elicit",
+      "GradGPT",
+      "Loudly"
+    ]
+  },
+  {
+    "query": "GDPR compliance checker",
+    "relevant_tools": [
+      "Visual Usability Checker",
+      "DiscloseKit Checker",
+      "FARSITE",
+      "Openstatus MCP Health Checker",
+      "ablagio.",
+      "Agnixa Recon 2.0",
+      "Eidentic",
+      "Gateplex",
+      "DataCloser",
+      "Berly"
+    ]
+  },
+  {
+    "query": "AI for intellectual property research",
+    "relevant_tools": [
+      "Abodex Space",
+      "Open Deep-Research",
+      "Deepseek v3-0324 Research",
+      "Llama-4-Maverick-17B Research",
+      "The Smol Training Playbook",
+      "Tabstack Web Research",
+      "Distilling 100B+ Models 40x Faster with TRL",
+      "FineVision: Open Data is All You Need",
+      "Agent X - Papers",
+      "Manimator"
+    ]
+  },
+  {
+    "query": "legal research and case law finder",
+    "relevant_tools": [
+      "HOA Dispute Shield",
+      "Speed.ai",
+      "Cleo Atlas Legal API",
+      "ReGuardian",
+      "Notum",
+      "CaseGap AI",
+      "NC Data",
+      "Open Source Alternative Finder",
+      "Tabstack Web Research",
+      "Case by DaemonLabs"
+    ]
+  },
+  {
+    "query": "AI for terms and conditions generation",
+    "relevant_tools": [
+      "klingai",
+      "Video Generation Leaderboard",
+      "Di♪♪Rhythm",
+      "Loudly",
+      "RunwayML",
+      "Boomy",
+      "Beatoven.ai",
+      "Based AI",
+      "Synthesia",
+      "Privacy-Safe Synthetic Data Generation | Syncora AI"
+    ]
+  },
+  {
+    "query": "compliance monitoring automation",
+    "relevant_tools": [
+      "Workflow Automation Softwares",
+      "FARSITE",
+      "FirmOS",
+      "Hearthlight",
+      "Freu AI",
+      "ReBillion.ai",
+      "Adrian",
+      "NC Data",
+      "Adon AI",
+      "Triggered Agents by Adaptive"
+    ]
+  },
+  {
+    "query": "AI paralegal assistant",
+    "relevant_tools": [
+      "DeepSeek R1 Chat Assistant Web Search",
+      "Ghost Assistant",
+      "Kim Personal Health Assistant",
+      "Mantle Clerk",
+      "Mina Meeting Assistant",
+      "Lemmy",
+      "aiPDF",
+      "Claude 3",
+      "Elephas",
+      "Yomu"
+    ]
+  },
+  {
+    "query": "trademark and patent search AI",
+    "relevant_tools": [
+      "Patent Gnome",
+      "Kazimir.ai",
+      "Awesome AI Web Search",
+      "Beam Search Visualizer",
+      "Web Search MCP",
+      "Draw To Search Art",
+      "Bagoodex Web Search",
+      "Search Your Face Online",
+      "Refinder AI",
+      "ChatGPT for Search Engines"
+    ]
+  },
+  {
+    "query": "AI for regulatory document analysis",
+    "relevant_tools": [
+      "Document Summarization",
+      "MinerU Document Extraction Tools",
+      "MiniAiLive ID Document Reader WebAPI Playground",
+      "aiPDF",
+      "Documents Restoration",
+      "Document.Bot - EU/ Offline AI workspace",
+      "MardRisk 1.1",
+      "Doc To Dialogue",
+      "Paligemma Doc",
+      "NotebookLM"
+    ]
+  },
+  {
+    "query": "due diligence automation tool",
+    "relevant_tools": [
+      "NC Data",
+      "OptiSupply",
+      "CTO-in-a-Box",
+      "Workflow Automation Softwares",
+      "FirmOS",
+      "Hearthlight",
+      "Freu AI",
+      "ReBillion.ai",
+      "Adon AI",
+      "Triggered Agents by Adaptive"
+    ]
+  },
+  {
+    "query": "AI stock market analysis and prediction",
+    "relevant_tools": [
+      "Prediction Guard",
+      "Real Time Stock Predictor",
+      "SHARP - 3D Gaussian Scene Prediction from Apple",
+      "ResearchOS",
+      "StockPhotoAI.net",
+      "IdeaScore.tech",
+      "MoneyRadar",
+      "CLI Market — Commerce APIs for AI Agents",
+      "FinAdvisor",
+      "MardRisk 1.1"
+    ]
+  },
+  {
+    "query": "automated accounting and bookkeeping",
+    "relevant_tools": [
+      "DATAPIQ",
+      "FirmOS",
+      "NAADI",
+      "ezJobs",
+      "Deepseek Multimodal",
+      "PR-Agent",
+      "Callstack.ai PR Reviewer",
+      "Tubeup",
+      "PhotoCall",
+      "Agnixa Recon 2.0"
+    ]
+  },
+  {
+    "query": "AI for fraud detection",
+    "relevant_tools": [
+      "Video Object Detection",
+      "YOLOv9 Object Detection w/ Transformers.js",
+      "Yolov13",
+      "Yolo11",
+      "PawMatchAI",
+      "VisionScout",
+      "Yolov9",
+      "FaceLivenessDetection",
+      "RF-DETR",
+      "YOLO26 WebGPU"
+    ]
+  },
+  {
+    "query": "personal investment portfolio optimizer",
+    "relevant_tools": [
+      "FinAdvisor",
+      "Meet Warren 3.0",
+      "Kim Personal Health Assistant",
+      "Transita",
+      "Asset Quadrant",
+      "Moneyball",
+      "Cently",
+      "Elephas",
+      "Factual — your personal news app",
+      "App Launch Forge Personal PC"
+    ]
+  },
+  {
+    "query": "AI tax preparation assistant",
+    "relevant_tools": [
+      "NAADI",
+      "DeepSeek R1 Chat Assistant Web Search",
+      "FinAdvisor",
+      "Ghost Assistant",
+      "Kim Personal Health Assistant",
+      "GateOS",
+      "Mina Meeting Assistant",
+      "Lemmy",
+      "aiPDF",
+      "Claude 3"
+    ]
+  },
+  {
+    "query": "expense categorization from receipts",
+    "relevant_tools": [
+      "Casha",
+      "Timmy-TUI",
+      "Baguni",
+      "Cently",
+      "Spendia",
+      "AEVS",
+      "Repo",
+      "DATAPIQ",
+      "MartinLoop"
+    ]
+  },
+  {
+    "query": "AI for loan underwriting",
+    "relevant_tools": [
+      "Arera"
+    ]
+  },
+  {
+    "query": "cryptocurrency trading bot",
+    "relevant_tools": [
+      "Prompt & Dump - AI NPC Trading Arena",
+      "Skillmarkdown",
+      "Robinhood Agentic Trading",
+      "SignalRelayer",
+      "Document.Bot - EU/ Offline AI workspace",
+      "AI Photo Forge",
+      "PJQ",
+      "ThaiPo",
+      "Asset Quadrant",
+      "Vexavibes"
+    ]
+  },
+  {
+    "query": "financial report generation from data",
+    "relevant_tools": [
+      "Financial Data API",
+      "Privacy-Safe Synthetic Data Generation | Syncora AI",
+      "MardRisk 1.1",
+      "The Interactive Radiology Report",
+      "Veltrix AI",
+      "BankStatementLab",
+      "Doc To Dialogue",
+      "Kiln",
+      "Career Break Planner by Planwell",
+      "CommitLens"
+    ]
+  },
+  {
+    "query": "AI for insurance claims processing",
+    "relevant_tools": [
+      "Image processing & OCR Comparator",
+      "PolicyVibe",
+      "Context Data",
+      "debatly",
+      "GhostCheck",
+      "AgentVet.ai",
+      "FixaPix",
+      "Asmi AI",
+      "OwnClip",
+      "LeaseScale"
+    ]
+  },
+  {
+    "query": "make videos with AI",
+    "relevant_tools": [
+      "Make Custom Voices With KokoroTTS",
+      "Make It Animatable",
+      "Make-A-Scene",
+      "Maia by Make",
+      "FaceFusion",
+      "Motion",
+      "Lance",
+      "Openai Sora",
+      "Yolov13",
+      "Synthesia"
+    ]
+  },
+  {
+    "query": "write emails faster",
+    "relevant_tools": [
+      "Lex",
+      "HyperWrite",
+      "FreelanceFlow",
+      "DeepL Write",
+      "Dream-wan2-2-faster-Pro",
+      "Distilling 100B+ Models 40x Faster with TRL",
+      "Tapfree for Chrome",
+      "Narasi AI",
+      "Typeahead",
+      "ChatGPT Writer"
+    ]
+  },
+  {
+    "query": "fix my code",
+    "relevant_tools": [
+      "Callstack.ai PR Reviewer",
+      "HowFast",
+      "Dittto.ai",
+      "Bob's CLI",
+      "FlowAudit",
+      "Agata",
+      "Spotlight by Backplanes",
+      "WeShopAI Bad Hand Fixer",
+      "Kilo Code",
+      "GPT-Code UI"
+    ]
+  },
+  {
+    "query": "talk to AI",
+    "relevant_tools": [
+      "Small Talk",
+      "Vid2persona",
+      "Claude 3",
+      "Contemplative moondream",
+      "Shyguy's Wingman",
+      "Mascotly AI",
+      "Guappa",
+      "Goblin Labs — AI personas",
+      "Invoko",
+      "Asmi AI"
+    ]
+  },
+  {
+    "query": "edit photos",
+    "relevant_tools": [
+      "Restore Photos",
+      "Step1X Edit",
+      "Qwen Edit Any Pose",
+      "Qwen Image Edit Outpaint",
+      "Qwen Image Edit Relight",
+      "DreamOmni2 Edit",
+      "Qwen Image Edit Inpaint",
+      "Qwen Image Edit + Loras built-in",
+      "Lucy Edit Dev",
+      "Qwen Image Edit 2509 Fast"
+    ]
+  },
+  {
+    "query": "summarize this",
+    "relevant_tools": [
+      "Smmry",
+      "Summary With AI",
+      "YouTube Summary with ChatGPT",
+      "Galactica",
+      "Reader Alive",
+      "Prismiq",
+      "Goldfish",
+      "ColibotAI",
+      "Ghost Mic"
+    ]
+  },
+  {
+    "query": "translate document",
+    "relevant_tools": [
+      "Document Summarization",
+      "MinerU Document Extraction Tools",
+      "MiniAiLive ID Document Reader WebAPI Playground",
+      "OutofLipSync",
+      "Canary 1b V2",
+      "Emoji Generator",
+      "aiPDF",
+      "Documents Restoration",
+      "Document.Bot - EU/ Offline AI workspace",
+      "Doc To Dialogue"
+    ]
+  },
+  {
+    "query": "find leads",
+    "relevant_tools": [
+      "Bildy.ai",
+      "SignalLEMO - Ai Outreach Made Simple",
+      "Linky",
+      "Find a leaderboard",
+      "Webnity X",
+      "PressPulse AI",
+      "Ryzent AI",
+      "Dialbotix",
+      "LooksMax AI",
+      "STATICX"
+    ]
+  },
+  {
+    "query": "automate tasks",
+    "relevant_tools": [
+      "Superlist MCP",
+      "SiteSpeakAI",
+      "Yansu",
+      "TailorTask",
+      "Manus Scheduled Tasks 2.0",
+      "Nekton AI",
+      "Elicit",
+      "Mem",
+      "Moondream3",
+      "Agent Leaderboard"
+    ]
+  },
+  {
+    "query": "analyze data",
+    "relevant_tools": [
+      "Agent Data Analyst",
+      "Architecture Helper",
+      "Code to Flow",
+      "Langfuse",
+      "Context Data",
+      "Privacy-Safe Synthetic Data Generation | Syncora AI",
+      "Pdf To Structured Data",
+      "Financial Data API",
+      "Fake Data Generator (JSONL)",
+      "Slack Data Agent"
+    ]
+  },
+  {
+    "query": "trasncribe my meating",
+    "relevant_tools": []
+  },
+  {
+    "query": "genrate images from text",
+    "relevant_tools": [
+      "UNO FLUX",
+      "PaddleOCR",
+      "FramePack F1",
+      "Stable Diffusion",
+      "SORA 3D",
+      "Craiyon",
+      "Miragic AI Image Generator",
+      "Helios 14B RealTime AOTI",
+      "Convert 2D Images To 3D High Quality Objects",
+      "TryOffDiff"
+    ]
+  },
+  {
+    "query": "custmer suport chatbot",
+    "relevant_tools": [
+      "RAG-Chatbot",
+      "ChatBot UI With API",
+      "Llama 3- 70B Chatbot",
+      "Chatbot UI",
+      "MOUSE-Visual AI Chatbot",
+      "Guardrails Arena",
+      "Llama 3.2 WebGPU",
+      "OpenCHAT Mini",
+      "Dear AI",
+      "GPTHelp.ai"
+    ]
+  },
+  {
+    "query": "seo keword reserch",
+    "relevant_tools": [
+      "SEO Scrubbox",
+      "GeoReady",
+      "Areza Digital",
+      "IvaBot",
+      "GetIntel - AI Visibility Tool",
+      "AI Visibility Audit Checklist",
+      "Greater Than Services",
+      "Quick Creator",
+      "AEO Score",
+      "SEOReport"
+    ]
+  },
+  {
+    "query": "video editng tool",
+    "relevant_tools": [
+      "Omni Video Factory",
+      "Video Generation Leaderboard",
+      "Instant Video",
+      "DreamO Video",
+      "MiniGPT4 Video",
+      "Video SoundFX",
+      "Video to Music",
+      "Video Dubbing (SoniTranslate)",
+      "DINOv3 Video Tracking",
+      "LTX Video Fast"
+    ]
+  },
+  {
+    "query": "AI for Dungeons and Dragons dungeon master",
+    "relevant_tools": [
+      "AI Dungeon",
+      "Audiomaster.ai",
+      "Polymyth"
+    ]
+  },
+  {
+    "query": "generate tattoo designs with AI",
+    "relevant_tools": [
+      "AIMakeTattoo",
+      "Microsoft Designer",
+      "PlantTattoosAI",
+      "Tessar",
+      "Text Behind Video",
+      "MakeLineArt",
+      "Berta Systems",
+      "Drafted",
+      "— AI Jukebox —",
+      "QwenSite"
+    ]
+  },
+  {
+    "query": "AI for wine pairing recommendations",
+    "relevant_tools": [
+      "What To Watch",
+      "Visual Usability Checker",
+      "HivRa",
+      "FreshFit",
+      "JobFit AI",
+      "libraryai",
+      "okliki — AI medication manager",
+      "Globe Thrivers Beta",
+      "Wearit — Try before you buy"
+    ]
+  },
+  {
+    "query": "dream interpretation AI",
+    "relevant_tools": [
+      "Dream 7B",
+      "Dream of Ikea",
+      "Dream Hub Pro",
+      "Dream-wan2-2-faster-Pro",
+      "Sandflare",
+      "Drafted"
+    ]
+  },
+  {
+    "query": "AI for astrology and horoscope generation",
+    "relevant_tools": [
+      "AstroVoice API",
+      "klingai",
+      "Video Generation Leaderboard",
+      "Di♪♪Rhythm",
+      "Loudly",
+      "RunwayML",
+      "Boomy",
+      "Beatoven.ai",
+      "Based AI",
+      "Synthesia"
+    ]
+  },
+  {
+    "query": "AI for sports performance analytics",
+    "relevant_tools": [
+      "Voker",
+      "Play Reflect",
+      "Veltrix AI",
+      "YOLO ARENA",
+      "Basedash: Embedded Analytics",
+      "GateOS",
+      "Yi Coder 9B",
+      "DodoForm",
+      "SocialBridge",
+      "Cosmic Insights"
+    ]
+  },
+  {
+    "query": "generate children story with illustrations",
+    "relevant_tools": [
+      "Bedtime Story Generator",
+      "Lumio",
+      "PicoAI Story Studio",
+      "Fiktion",
+      "AI Dungeon",
+      "UnBullet",
+      "LifeReel",
+      "Our Stories",
+      "Dreambeans by Google Labs",
+      "— AI Jukebox —"
+    ]
+  },
+  {
+    "query": "AI interior architect for home renovation",
+    "relevant_tools": [
+      "Dream of Ikea",
+      "Reachy Phone Home",
+      "ProAssist",
+      "Room Reinvented",
+      "Drafted",
+      "Hearthlight",
+      "Abodex Space",
+      "Vexavibes",
+      "TradeVulcan",
+      "Rooftops AI Agent"
+    ]
+  },
+  {
+    "query": "AI for supply chain optimization",
+    "relevant_tools": [
+      "PartFinder",
+      "Chain-of-Zoom",
+      "ZenVeil",
+      "TensorZero",
+      "CoI Agent",
+      "AGIRAILS",
+      "CVSite",
+      "BrandGEO",
+      "Predictive AI Protection",
+      "Vibe5"
+    ]
+  },
+  {
+    "query": "turn handwritten notes into digital text",
+    "relevant_tools": [
+      "HTRflow App",
+      "Sisif",
+      "GradeLab V4.0",
+      "Hour One",
+      "Novi Notes 1.1",
+      "Orbits",
+      "LLM Embeddings Explained: A Visual and Intuitive Guide",
+      "Lirivo",
+      "Areza Digital",
+      "Forkd"
+    ]
+  },
+  {
+    "query": "AI for grant writing and fundraising",
+    "relevant_tools": [
+      "Fundraisly",
+      "Pond",
+      "Jenni",
+      "Yomu",
+      "Anyword",
+      "DeepL Write",
+      "Rytr",
+      "Shy Editor",
+      "Nexus AI",
+      "VC Boom"
+    ]
+  },
+  {
+    "query": "generate memes and viral content with AI",
+    "relevant_tools": [
+      "RobinOS",
+      "AutoSubtitles 2.0",
+      "Open Meme Studio",
+      "Viral",
+      "Vavdio",
+      "Narasi AI",
+      "Bildy.ai",
+      "AI Marketing Content Generator",
+      "FeedPo",
+      "StoryHatch"
+    ]
+  },
+  {
+    "query": "AI for event planning and management",
+    "relevant_tools": [
+      "Cirqly Event Planner",
+      "Realtime Whisper Turbo",
+      "PlanBoards",
+      "Text2Calendar",
+      "Completo AI",
+      "Agent-Sin",
+      "Kilo Code",
+      "fynk",
+      "Laviya",
+      "RCMS® - Smart Dental Clinic Management"
+    ]
+  },
+  {
+    "query": "detect plagiarism in documents",
+    "relevant_tools": [
+      "Documents Restoration",
+      "AI Text Detector",
+      "Yolov13",
+      "Facial Expression Recognition",
+      "Cleanlab",
+      "Yolo11",
+      "privateGPT",
+      "SeaTicket",
+      "Bildy.ai",
+      "Parsewise API"
+    ]
+  },
+  {
+    "query": "AI for news summarization and briefing",
+    "relevant_tools": [
+      "Document Summarization",
+      "News Beast",
+      "Factual — your personal news app",
+      "Shroomie",
+      "The Claude Code Daily",
+      "BeyondComments",
+      "CustomPod.io",
+      "debatly",
+      "Agentic Diaries",
+      "FactGuard"
+    ]
+  },
+  {
+    "query": "AI avatar for virtual meetings",
+    "relevant_tools": [
+      "Cogram",
+      "Avatar AI",
+      "LongCat-Video-Avatar 1.5",
+      "Virtual Try-On Diffusion [VTON-D]",
+      "WeShopAI Virtual Try On",
+      "Miragic Virtual Try On",
+      "LAM",
+      "FASHN VTON v1.5",
+      "VDA",
+      "Caddie"
+    ]
+  },
+  {
+    "query": "generate social media calendar automatically",
+    "relevant_tools": [
+      "RobinOS",
+      "Postly",
+      "Narasi AI",
+      "GoGoHype",
+      "Regent",
+      "Vavdio",
+      "Unfoldly",
+      "Street level threat Geointelligence",
+      "ClimbX",
+      "tweet.md"
+    ]
+  },
+  {
+    "query": "AI for scientific research paper writing",
+    "relevant_tools": [
+      "Consensus",
+      "Paper Q&A",
+      "Daily Paper Podcast",
+      "Nexus AI",
+      "SciSpace",
+      "Vision Papers",
+      "CoI Agent",
+      "Debo",
+      "Explainpaper",
+      "Open Deep-Research"
+    ]
+  },
+  {
+    "query": "chatbot for mental wellness and journaling",
+    "relevant_tools": [
+      "RAG-Chatbot",
+      "ChatBot UI With API",
+      "Llama 3- 70B Chatbot",
+      "Chatbot UI",
+      "MOUSE-Visual AI Chatbot",
+      "DecisionsMatter.ai- Decisions Assistant",
+      "Guardrails Arena",
+      "Sona",
+      "Llama 3.2 WebGPU",
+      "OpenCHAT Mini"
+    ]
+  },
+  {
+    "query": "AI for customer churn prediction",
+    "relevant_tools": [
+      "Prediction Guard",
+      "SHARP - 3D Gaussian Scene Prediction from Apple",
+      "SiteSpeakAI",
+      "Dear AI",
+      "GPTHelp.ai",
+      "SiteGPT",
+      "Inline Help",
+      "Twig",
+      "Aidbase",
+      "Deckly"
+    ]
+  },
+  {
+    "query": "generate wireframes and UI mockups with AI",
+    "relevant_tools": [
+      "Magma UI",
+      "ChatBot UI With API",
+      "Chatbot UI",
+      "GPT-Code UI",
+      "AetherNode UI Suite",
+      "ImageN'You",
+      "LLaMA Board",
+      "Magic Patterns",
+      "TestSprite 3.0",
+      "Gemini Queue"
+    ]
+  },
+  {
+    "query": "AI for cybersecurity threat detection",
+    "relevant_tools": [
+      "Street level threat Geointelligence",
+      "Video Object Detection",
+      "YOLOv9 Object Detection w/ Transformers.js",
+      "Yolov13",
+      "Yolo11",
+      "PawMatchAI",
+      "VisionScout",
+      "Yolov9",
+      "FaceLivenessDetection",
+      "RF-DETR"
+    ]
+  },
+  {
+    "query": "voice assistant for smart home devices",
+    "relevant_tools": [
+      "VDA",
+      "Paste MCP & AI Tools",
+      "okliki — AI medication manager",
+      "Reachy Phone Home",
+      "TradeVulcan",
+      "ProAssist",
+      "Phind",
+      "RCMS® - Smart Dental Clinic Management",
+      "PolaroidVL Installer",
+      "Drafted"
+    ]
+  },
+  {
+    "query": "AI for travel itinerary planning",
+    "relevant_tools": [
+      "Globe Thrivers Beta",
+      "TravelPlanner",
+      "AI Travel Planner",
+      "Wimemo - Travel photo map",
+      "GoByVibe",
+      "Latent Navigation",
+      "Transita",
+      "AirTrackBot • Flight Deals",
+      "Kilo Code",
+      "TravelMind"
+    ]
+  },
+  {
+    "query": "generate subtitles and closed captions",
+    "relevant_tools": [
+      "AutoSubtitles 2.0",
+      "Blip Image Captioning Large",
+      "Overline",
+      "Narasi AI",
+      "Marlin 2B Video Understanding",
+      "Clipline",
+      "Vavdio",
+      "audien.to",
+      "DualCap",
+      "StoryHatch"
+    ]
+  }
+]

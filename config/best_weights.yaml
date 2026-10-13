@@ -1,0 +1,6 @@
+mean_precision_at_k: 0.4232
+tuned_on: bm25_ground_truth_209_queries
+w_bm25: 0.4544
+w_category: 0.1371
+w_popularity: 0.0
+w_semantic: 0.4085

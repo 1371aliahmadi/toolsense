@@ -1,0 +1,69 @@
+stages:
+  # ── Stage 1: Scrape raw data ──────────────────────────────────────────────
+  scrape:
+    cmd: python run_phase01.py
+    deps:
+      - run_phase01.py
+      - src/data/
+    outs:
+      - data/raw_tools.csv
+
+  # ── Stage 2: Clean & validate ────────────────────────────────────────────
+  clean:
+    cmd: python run_phase02.py
+    deps:
+      - run_phase02.py
+      - src/ingestion/
+      - data/raw_tools.csv
+    outs:
+      - data/clean_tools.csv
+
+  # ── Stage 3: Build vector index ──────────────────────────────────────────
+  embed:
+    cmd: python run_phase03.py
+    deps:
+      - run_phase03.py
+      - src/embeddings/
+      - data/clean_tools.csv
+    outs:
+      - data/qdrant/
+
+  # ── Stage 4: Tune weights ────────────────────────────────────────────────
+  tune:
+    cmd: python run_phase05.py
+    deps:
+      - run_phase05.py
+      - src/tuning/
+      - data/qdrant/
+    outs:
+      - config/best_weights.yaml
+
+  # ── Stage 5: Evaluate ────────────────────────────────────────────────────
+  evaluate:
+    cmd: python run_phase06.py
+    deps:
+      - run_phase06.py
+      - src/evaluation/
+      - data/qdrant/
+      - config/best_weights.yaml
+    metrics:
+      - data/eval_metrics.json:
+          cache: false
+
+  # ── Stage 6: Annotate ground truth ──────────────────────────────────────
+  annotate:
+    cmd: python src/annotation/llm_annotator.py --provider ollama
+    deps:
+      - src/annotation/llm_annotator.py
+      - data/label_studio_tasks.json
+    outs:
+      - data/annotations_export.json
+
+  # ── Stage 7: Convert annotations ─────────────────────────────────────────
+  ground_truth:
+    cmd: python run_phase08.py --convert
+    deps:
+      - run_phase08.py
+      - data/annotations_export.json
+    outs:
+      - data/ground_truth.json

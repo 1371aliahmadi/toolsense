@@ -1,0 +1,58 @@
+version: "3.9"
+
+# ToolSense — Docker Compose
+# ===========================
+# Usage:
+#   docker compose up --build       # start API
+#   docker compose up -d            # start in background
+#   docker compose logs -f api      # stream logs
+#   docker compose down             # stop
+
+services:
+
+  # ── FastAPI backend ──────────────────────────────────────────────────────────
+  api:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: toolsense-api
+    ports:
+      - "8000:8000"
+    volumes:
+      # Mount local data dir so Qdrant + CSV are accessible without baking into image
+      - ./data:/app/data:ro
+    environment:
+      - QDRANT_PATH=/app/data/qdrant
+      - WANDB_MODE=disabled       # disable W&B inside container
+    env_file:
+      - .env
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8000/health"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 20s
+
+  # ── Streamlit frontend ───────────────────────────────────────────────────────
+  ui:
+    image: python:3.11-slim
+    container_name: toolsense-ui
+    working_dir: /app
+    volumes:
+      - ./app:/app/app
+      - ./requirements-api.txt:/app/requirements-api.txt
+    ports:
+      - "8501:8501"
+    environment:
+      - API_URL=http://api:8000
+    command: >
+      bash -c "pip install --no-cache-dir streamlit requests -q &&
+               streamlit run app/streamlit_app.py
+               --server.port 8501
+               --server.address 0.0.0.0
+               --server.headless true"
+    depends_on:
+      api:
+        condition: service_healthy
+    restart: unless-stopped

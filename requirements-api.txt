@@ -1,0 +1,13 @@
+# Slim requirements for the Docker API image
+# (excludes heavy training/tuning/annotation deps)
+
+fastapi>=0.111.0
+uvicorn[standard]>=0.30.0
+pydantic>=2.7.0
+pyyaml>=6.0
+python-dotenv>=1.0.0
+numpy>=1.26.0
+sentence-transformers>=3.0.0
+qdrant-client>=1.9.0
+pyspellchecker>=0.8.0
+rank-bm25>=0.7.2

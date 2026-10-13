@@ -1,0 +1,61 @@
+# ToolSense — Central Configuration
+# All parameters in one place. Override via environment variables where noted.
+
+scraping:
+  futurepedia_max_tools: 3000    # cap — Futurepedia has 5000+ tools
+  futurepedia_delay_seconds: 1.0 # polite delay between pages
+  producthunt_max_posts: 2000  # paginate until we have this many AI posts
+  producthunt_delay_seconds: 0.5
+  huggingface_max_spaces: 3000   # top N spaces by likes — no auth needed
+  huggingface_delay_seconds: 0.3 # polite delay between pages
+  huggingface_min_likes: 0       # 0 = no filter; description quality filter handles junk
+
+data:
+  raw_path: "data/raw_tools.csv"
+  clean_path: "data/clean_tools.csv"
+  annotated_path: "data/annotated_tools.json"
+  quality_report_path: "data/quality_report.html"
+
+quality:
+  min_description_words: 10
+  duplicate_similarity_threshold: 0.85
+  max_source_dominance: 0.60    # neither source > 60% of dataset
+
+embeddings:
+  model_a: "sentence-transformers/all-MiniLM-L6-v2"   # fast, 384-dim
+  model_b: "sentence-transformers/all-mpnet-base-v2"  # quality, 768-dim
+  active_model: "model_b"       # all-mpnet-base-v2: 768-dim, higher MTEB score
+  batch_size: 64
+
+qdrant:
+  collection_name: "toolsense_tools"
+  hnsw_m: 16
+  hnsw_ef_construct: 200
+  distance: "Cosine"
+
+ranker:
+  # Starting weights — Optuna will tune these
+  w_semantic: 0.60
+  w_category: 0.25
+  w_popularity: 0.15
+  top_k: 10            # candidates from Qdrant
+  return_k: 5          # final results to user
+
+llm:
+  backend: "ollama"    # "ollama" or "openai" — override in .env
+  ollama_model: "llama3.2:3b"
+  openai_model: "gpt-4o-mini"
+  max_tokens: 200      # per explanation paragraph
+  temperature: 0.3
+
+optuna:
+  n_trials: 100
+  study_name: "toolsense_weight_tuning"
+  metric: "precision_at_10"
+
+evaluation:
+  k_values: [5, 10]
+
+wandb:
+  project: "toolsense"
+  entity: null         # set to your W&B username if needed
