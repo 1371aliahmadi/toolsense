@@ -33,3 +33,5 @@ wandb/
 
 # Qdrant local storage
 qdrant_storage/
+
+.github/
